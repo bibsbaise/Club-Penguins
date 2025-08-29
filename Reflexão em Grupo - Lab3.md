@@ -47,6 +47,8 @@ Ator: Sistema
 - UC7: Visualizar Progresso
 - UC8: Buscar Sinal no Dicionário
 - UC11: Enviar Notificações
+
+  <br>
   
 ## Desenvolver diagrama de caso de uso UML
 <details>
@@ -93,8 +95,25 @@ Sistema --> (Enviar Notificações)<br>
 @enduml<br>
 </details>
 
+https://gitlab.com/GuiRodrr/club-penguins/-/blob/main/useCaseDiagram.md
+
+<br>
+
+## **Detalhamento de caso de uso principal**
+
+### **Caso de uso: Iniciar e completar uma lição**
+
+**Cenário de sucesso principal:** 
+Um aluno inicia uma aula, executa cada exercício, e finaliza a lição com sucesso.
+
+**Cenários alternativos:** <br>
+- Se o aluno gastar todas as suas vidas em erros, e decidir não recarregá-las, não será possível completar a lição. <br>
+- Se o aluno gastar todas as suas vidas em erros ele poderá gastar suas moedas para recarregar e voltar de onde parou. <br>
+- Se o aluno errar algum dos exercícios, será necessário refazê-lo no final da lição até ter sucesso em todos os exercícios. <br>
+- Se o aluno sair no meio da lição, será necessário refazê-la desde o começo. <br>
 
 
+<br><br>
 
 # Fontes
 - https://www.pertodigital.com.br/blog/quantas-pessoas-conhecem-libras-no-brasil-conheca-os-dados-mais-recentes-sobre-acessibilidade-digital
