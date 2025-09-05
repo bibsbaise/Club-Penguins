@@ -30,74 +30,12 @@ Ator: Aluno
 - UC1: Editar perfil
 - UC2: Cadastrar usuário
 - UC3: Iniciar e Completar uma Lição
-- UC4: Realizar Teste de Nivelamento de Conhecimento
-- UC5: Definir Meta de Diária
-- UC6: Realizar Revisão Personalizada
-- UC7: Visualizar Progresso
-- UC8: Buscar Sinal no Dicionário
 
-Ator: Sistema
-
-- UC9: Avaliar Nível de Conhecimento
-- UC10: Marcar Sinais com maior Índice de Erro
-- UC11: Enviar Notificações  
-### Casos de usos mais importante do sistema
+### Caso de uso mais importante do sistema
 - UC3: Iniciar e Completar uma Lição
-- UC6: Realizar Revisão Personalizada
-- UC7: Visualizar Progresso
-- UC8: Buscar Sinal no Dicionário
-- UC11: Enviar Notificações
-
-  <br>
   
 ## Desenvolver diagrama de caso de uso UML
-<details>
-<summary>Código PlantUml</summary>
-@startuml<br>
-'''<br>
-' Atores<br>
-actor Aluno<br>
-actor Sistema<br>
-<br>
-' Casos de uso do Aluno<br>
-package "UC Aluno" {<br>
-    (Editar perfil)<br>
-    (Cadastrar usuário)<br>
-    (Iniciar e Completar uma Lição)<br>
-    (Realizar Teste de Nivelamento de Conhecimento)<br>
-    (Definir Meta de Diária)<br>
-    (Realizar Revisão Personalizada)<br>
-    (Visualizar Progresso)<br>
-    (Buscar Sinal no Dicionário)<br>
-}<br>
-<br>
-' Casos de uso do Sistema<br>
-package "UC Sistema" {<br>
-    (Avaliar Nível de Conhecimento)<br>
-    (Marcar Sinais com maior Índice de Erro)<br>
-    (Enviar Notificações)<br>
-}<br>
-
-' Relacionamentos<br>
-Aluno --> (Editar perfil)<br>
-Aluno --> (Cadastrar usuário)<br>
-Aluno --> (Iniciar e Completar uma Lição)<br>
-Aluno --> (Realizar Teste de Nivelamento de Conhecimento)<br>
-Aluno --> (Definir Meta de Diária)<br>
-Aluno --> (Realizar Revisão Personalizada)<br>
-Aluno --> (Visualizar Progresso)<br>
-Aluno --> (Buscar Sinal no Dicionário)<br>
-<br>
-Sistema --> (Avaliar Nível de Conhecimento)<br>
-Sistema --> (Marcar Sinais com maior Índice de Erro)<br>
-Sistema --> (Enviar Notificações)<br>
-'''<br>
-@enduml<br>
-</details>
-
 https://gitlab.com/GuiRodrr/club-penguins/-/blob/main/useCaseDiagram.md
-
-<br>
 
 ## **Detalhamento de caso de uso principal**
 
