@@ -31,6 +31,9 @@ Ator: Aluno
 - UC2: Cadastrar usuário
 - UC3: Iniciar e Completar uma Lição
 
+<img width="487" height="328" alt="image" src="https://github.com/user-attachments/assets/a4dd94e6-47b2-4823-931a-b0c0f2988f8c" />
+
+
 ### Caso de uso mais importante do sistema
 - UC3: Iniciar e Completar uma Lição
   
