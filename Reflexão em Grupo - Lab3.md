@@ -56,6 +56,20 @@ Um aluno inicia uma aula, executa cada exercício, e finaliza a lição com suce
 
 <br><br>
 
+## Especificação do Caso de Uso 1: Editar perfil
+
+| **Identificador** | UC01           |
+|-------------------|----------------|
+| **Nome**          | Editar perfil  |
+| **Atores**        | Cliente        |
+| **Sumário**        | Cliente acessa a página de edição de perfil. Nessa página, o cliente pode customizar o seu perfil, adicionando uma foto e ícones de suas conquistas, além de adicionar amigos, compartilhar seu perfil e visualizar suas medalhas.       |
+| **Pré-condição**        | O cliente deve estar logado.     |
+| **Pós-condição**        | O perfil é editado conforme a vontade do cliente, e deve exibir tudo o que foi adicionado / modificado.        |
+| **Pontos de Inclusão**        |         |
+| **Pontos de Extensão**        |         |
+
+
+
 # Fontes
 - https://www.pertodigital.com.br/blog/quantas-pessoas-conhecem-libras-no-brasil-conheca-os-dados-mais-recentes-sobre-acessibilidade-digital
 - https://desculpenaoouvi.com.br/ibge-confirma-surdez-nao-e-sinonimo-de-libras/
