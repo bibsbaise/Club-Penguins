@@ -32,8 +32,7 @@ Ator: Aluno
 - UC3: Iniciar e Completar uma Lição
 - UC4: Realizar Login
 
-<img width="487" height="328" alt="image" src="https://github.com/user-attachments/assets/a4dd94e6-47b2-4823-931a-b0c0f2988f8c" />
-
+<img width="386" height="326" alt="image" src="https://github.com/user-attachments/assets/17842a6b-b630-4907-b768-70a7ecd935cc" />
 
 ### Caso de uso mais importante do sistema
 - UC3: Iniciar e Completar uma Lição
