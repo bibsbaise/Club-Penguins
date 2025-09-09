@@ -42,6 +42,19 @@ https://gitlab.com/GuiRodrr/club-penguins/-/blob/main/useCaseDiagram.md
 
 ## **Detalhamento de caso de uso principal**
 
+## **Caso de uso: UC1 Cadastrar Usuário**
+
+|**Especificação do Caso de Uso** | - |
+| ---- | ----- |
+| **Identificador** | UC02 |
+| **Nome** | Cadastrar Usuário |
+| **Atores** | Aluno |
+| **Sumário** | -  |
+| **Pré-condição** | Instalar aplicativo, ter um e-mail válido, 
+| **Pós-condição** | - |
+| **Pontos de Inclusão** | - |
+| **Pontos de Extensão** | - |
+
 ### **Caso de uso: Iniciar e completar uma lição**
 
 **Cenário de sucesso principal:** 
