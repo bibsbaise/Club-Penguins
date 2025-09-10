@@ -73,7 +73,7 @@ Um aluno inicia uma aula, executa cada exercício, e finaliza a lição com suce
 |**Ações do Ator** | **Ações do Sistema** |
 |------------------|----------------------|
 |1. Cliente acessa a página de edição de perfil. | |
-|                  |2. Sistema apresenta tela de edição de perfil e exibe as personalizações que podem ser feitas, como exibir ícones, medalhas e editar avatar. |
+|                  |2. Sistema apresenta tela de edição de perfil e exibe as personalizações que podem ser feitas, como exibir ícones de conquistas, visualizar medalhas e editar avatar. |
 |3. Cliente aperta o botão "Criar Avatar". | |
 |                  |4. Sistema permite a personalização de um avatar: escolha de um gênero, cor de pele, formato do rosto, cor e tipo de cabelo, cor e tipo de olho, roupas e acessórios. |
 |5. Cliente personaliza seu avatar e pressiona o botão "Finalizar Avatar". | |
