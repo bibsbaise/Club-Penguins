@@ -90,6 +90,10 @@ Um aluno inicia uma aula, executa cada exercício, e finaliza a lição com suce
 |                  |16. Sistema exibe uma tela mostrando quais solicitações de amizade estão pendentes para o Cliente aceitar ou rejeitar. Caso não haja nenhuma, exibirá a mensagem "Ainda não há solicitações de amizades!". |
 |17. Cliente escolhe aceitar ou rejeitar a solicitação recebida. | |
 |                  |18. Sistema adiciona a pessoa como amiga, caso o Cliente tenha escolhido "Aceitar", ou rejeita a solicitação, caso o Cliente tenha escolhido "Rejeitar".|
+|19. Cliente aperta o botão "Compartilhar Perfil". | |
+|                  |20. Sistema gera um link compartilhável, que exibe o avatar do Cliente, seus Ícones de Conquistas e quantos amigos o Cliente já adicionou, e exibe o código de amizade do Cliente . |
+|21. Cliente aperta o botão "Visualizar Medalhas. | |
+|                  |22. Sistema busca e exibe uma tela mostrando as medalhas já obtidas pelo Cliente ao longo de seus estudos. Fim do caso de uso. |
 
 
 
