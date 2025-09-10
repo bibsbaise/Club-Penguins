@@ -62,11 +62,34 @@ Um aluno inicia uma aula, executa cada exercício, e finaliza a lição com suce
 |-------------------|----------------|
 | **Nome**          | Editar perfil  |
 | **Atores**        | Cliente        |
-| **Sumário**        | Cliente acessa a página de edição de perfil. Nessa página, o cliente pode customizar o seu perfil, adicionando uma foto e ícones de suas conquistas, além de adicionar amigos, compartilhar seu perfil e visualizar suas medalhas.       |
+| **Sumário**        | Cliente acessa a página de edição de perfil. Nessa página, o cliente pode customizar o seu perfil, adicionando um avatar e ícones de suas conquistas, além de adicionar amigos, compartilhar seu perfil e visualizar suas medalhas.       |
 | **Pré-condição**        | O cliente deve estar logado.     |
 | **Pós-condição**        | O perfil é editado conforme a vontade do cliente, e deve exibir tudo o que foi adicionado / modificado.        |
 | **Pontos de Inclusão**        |         |
 | **Pontos de Extensão**        |         |
+
+## Fluxo Principal
+
+|**Ações do Ator** | **Ações do Sistema** |
+|------------------|----------------------|
+|1. Cliente acessa a página de edição de perfil. | |
+|                  |2. Sistema apresenta tela de edição de perfil e exibe as personalizações que podem ser feitas, como exibir ícones, medalhas e editar avatar. |
+|3. Cliente aperta o botão "Criar Avatar". | |
+|                  |4. Sistema permite a personalização de um avatar: escolha de um gênero, cor de pele, formato do rosto, cor e tipo de cabelo, cor e tipo de olho, roupas e acessórios. |
+|5. Cliente personaliza seu avatar e pressiona o botão "Finalizar Avatar". | |
+|                  |6. Sistema cria e exibe o avatar conforme especificado pelo cliente. |
+|7. Cliente aperta o botão "Adicionar Ícones de Conquistas". | |
+|                  |8. Sistema busca quais Ícones de Conquistas o Cliente já possui, mostra cada um deles numa tela, e permite que ele exiba até 3 deles em seu perfil. |
+|9. Cliente seleciona 3 Ícones de sua escolha para exibir em seu perfil. | |
+|                  |10. Sistema exibe os Ícones escolhidos no perfil do Cliente. |
+|11. Cliente aperta o botão "Adicionar Amigos". | |
+|                  |12. Sistema exibe uma tela de busca, na qual o Cliente deverá pesquisar pelo nome de usuário da pessoa que deseja adicionar como amigo ou escrever o código de amigo de uma pessoa. |
+|13. Cliente seleciona a pessoa que deseja adicionar. | |
+|                  |14. Sistema adiciona a pessoa como amiga. |
+|15. Cliente aperta o botão "Solicitações de Amizade". | |
+|                  |16. Sistema exibe uma tela mostrando quais solicitações de amizade estão pendentes para o Cliente aceitar ou rejeitar. Caso não haja nenhuma, exibirá a mensagem "Ainda não há solicitações de amizades!". |
+|17. Cliente escolhe aceitar ou rejeitar a solicitação recebida. | |
+|                  |18. Sistema adiciona a pessoa como amiga, caso o Cliente tenha escolhido "Aceitar", ou rejeita a solicitação, caso o Cliente tenha escolhido "Rejeitar".|
 
 
 
