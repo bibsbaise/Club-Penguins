@@ -83,6 +83,11 @@ Um aluno inicia uma aula, executa cada exercício, e finaliza a lição com suce
 
 ## Fluxo Alternativo
 
+|**Ações do Ator** | **Ações do Sistema** |
+|------------------|----------------------|
+|5.1.1 Cliente tenta adicionar um ícone que ainda não obteve. | |
+|                  |5.1.2. Sistema apresenta uma mensagem dizendo que este ícone ainda não foi obtido, e permite que ele selecione outro. |
+
 ## Especificação do Caso de Uso 3: Iniciar e Completar uma Lição
 
 | **Identificador** | UC03           |
