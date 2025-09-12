@@ -81,6 +81,8 @@ Um aluno inicia uma aula, executa cada exercício, e finaliza a lição com suce
 |7. Cliente aperta o botão "Visualizar Medalhas. | |
 |                  |8. Sistema busca e exibe uma tela mostrando as medalhas já obtidas pelo Cliente ao longo de seus estudos. Fim do caso de uso. |
 
+## Fluxo Alternativo
+
 ## Especificação do Caso de Uso 3: Iniciar e Completar uma Lição
 
 | **Identificador** | UC03           |
@@ -98,13 +100,15 @@ Um aluno inicia uma aula, executa cada exercício, e finaliza a lição com suce
 |**Ações do Ator** | **Ações do Sistema** |
 |------------------|----------------------|
 |1. Cliente aperta o botão "Ver Módulos". | |
-|                  |2. Sistema apresenta tela de módulos. |
+|                  |2. Sistema apresenta a tela de Módulos. |
 |3. Cliente seleciona o módulo que deseja aprender. | |
 |                  |4. Sistema busca o progresso do Cliente para ver quais lições ele já pode acessar e apresenta o módulo para o Cliente. |
 |5. Cliente seleciona a lição que deseja aprender. | |
 |                  |6. Sistema apresenta a tela da lição, apresentando os exercícios a serem feitos.  |
 |7. Cliente completa a lição sem perder as vidas. | |
 |                  |8. Sistema registra o progresso do Cliente e desbloqueia novas lições. Fim do caso de uso. |
+
+## Fluxo Alternativo
 
 # Fontes
 - https://www.pertodigital.com.br/blog/quantas-pessoas-conhecem-libras-no-brasil-conheca-os-dados-mais-recentes-sobre-acessibilidade-digital
