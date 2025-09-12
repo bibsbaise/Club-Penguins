@@ -40,7 +40,39 @@ Ator: Aluno
 ## Desenvolver diagrama de caso de uso UML
 https://gitlab.com/GuiRodrr/club-penguins/-/blob/main/useCaseDiagram.md
 
-## **Caso de uso: UC2 Cadastrar Usuário**
+## Especificação do Caso de Uso 1: Editar perfil
+
+| **Identificador** | UC1           |
+|-------------------|----------------|
+| **Nome**          | Editar perfil  |
+| **Atores**        | Cliente        |
+| **Sumário**        | Cliente acessa a página de edição de perfil. Nessa página, o cliente pode customizar o seu perfil, adicionando ícones de suas conquistas e visualizando suas medalhas.       |
+| **Pré-condição**        | O cliente deve estar logado.     |
+| **Pós-condição**        | O perfil é editado conforme a vontade do cliente, e deve exibir tudo o que foi adicionado / modificado.        |
+| **Pontos de Inclusão**        |    Realizar Login (UC04)     |
+| **Pontos de Extensão**        |         |
+
+## Fluxo Principal
+
+|**Ações do Ator** | **Ações do Sistema** |
+|------------------|----------------------|
+|1. Cliente acessa a página de edição de perfil. | |
+|                  |2. Sistema apresenta tela de edição de perfil e exibe as personalizações que podem ser feitas, como exibir ícones de conquistas e visualizar medalhas. |
+|3. Cliente aperta o botão "Adicionar Ícones de Conquistas". | |
+|                  |4. Sistema busca quais Ícones de Conquistas o Cliente já possui, mostra cada um deles numa tela, e permite que ele exiba até 3 deles em seu perfil. |
+|5. Cliente seleciona 3 Ícones de sua escolha para exibir em seu perfil. | |
+|                  |6. Sistema exibe os Ícones escolhidos no perfil do Cliente. |
+|7. Cliente aperta o botão "Visualizar Medalhas. | |
+|                  |8. Sistema busca e exibe uma tela mostrando as medalhas já obtidas pelo Cliente ao longo de seus estudos. Fim do caso de uso. |
+
+## Fluxo Alternativo
+
+|**Ações do Ator** | **Ações do Sistema** |
+|------------------|----------------------|
+|5.1.1 Cliente tenta adicionar um ícone que ainda não obteve. | |
+|                  |5.1.2. Sistema apresenta uma mensagem dizendo que este ícone ainda não foi obtido, e permite que ele selecione outro. |
+
+## **Especificação de Caso de Uso 2: Cadastrar Usuário**
 
 ### **Especificação do Caso de Uso**
 |Item | Especificação |
@@ -85,88 +117,6 @@ https://gitlab.com/GuiRodrr/club-penguins/-/blob/main/useCaseDiagram.md
 | 5.3.1 Aluno insere e-mails diferentes em campos "digite sua senha" e "confirme sua senha" |  |
 |  | 5.2.2 Sistema verifica que "digite sua senha" e "confirme sua senha" não conferem |
 |  | 5.2.3 Sistema Informa que campos de senha não conferem e solicita reinserção |
-
-## **Caso de uso: UC4 Realizar Login**
-
-### **Especificação do Caso de Uso**
-|Item | Especificação |
-| ---- | ---- |
-| **Identificador** | UC4 |
-| **Nome** | Realizar Login |
-| **Atores** | Aluno |
-| **Sumário** | Aluno realiza o login com e-mail e senha para poder acessar as lições visualizar e salvar seu progresso ao longo dos módulos |
-| **Pré-condição** | Instalar aplicativo, ter realizado cadastro |
-| **Pós-condição** |  |
-| **Pontos de Inclusão** | E-mail, Senha |
-| **Pontos de Extensão** | |
-
-### **Fluxo Principal**
-| Ações do Ator | Ações do Sistema |
-| --- | --- |
-| 1. Aluno abre o aplicativo |  |
-|  | 2.Sistema apresenta a tela de boas vindas com campos de login e opção de "Criar Conta" logo abaixo |
-| 3. Aluno digita seu E-mail e Senha nos campos "digite seu e-mail" e "digite sua senha" |  |
-|  | 4. Sistema verifica o banco de dados e confere se Fernet de e-mail e senha conferem com os dados inseridos pelo usuário |
-|  | 5. Sistema permite entrada de usuário |
-
-### **Fluxos Alternativos**
-
-| Ações do Ator | Ações do Sistema |
-| --- | --- |
-| 3.1.1 Aluno digita e-mail não cadastrado |  |
-|  | 3.1.2 Sistema informa que e-mail não foi encontrado e pede reinserção, também sugere aluno cadastrar caso não esteja |
-
-
-| Ações do Ator | Ações do Sistema |
-| --- | --- |
-| 3.2.1 Aluno digita e-mail cadastrado, mas Fernet de senha armazenado no banco e lido não conferem |  |
-|  | 3.2.2 Sistema informa que senha é inválida e pede reinserção |
-
-### **Caso de uso: Iniciar e completar uma lição**
-
-**Cenário de sucesso principal:** 
-Um aluno inicia uma aula, executa cada exercício, e finaliza a lição com sucesso.
-
-**Cenários alternativos:** <br>
-- Se o aluno gastar todas as suas vidas em erros, e decidir não recarregá-las, não será possível completar a lição. <br>
-- Se o aluno gastar todas as suas vidas em erros ele poderá gastar suas moedas para recarregar e voltar de onde parou. <br>
-- Se o aluno errar algum dos exercícios, será necessário refazê-lo no final da lição até ter sucesso em todos os exercícios. <br>
-- Se o aluno sair no meio da lição, será necessário refazê-la desde o começo. <br>
-
-
-<br><br>
-
-## Especificação do Caso de Uso 1: Editar perfil
-
-| **Identificador** | UC01           |
-|-------------------|----------------|
-| **Nome**          | Editar perfil  |
-| **Atores**        | Cliente        |
-| **Sumário**        | Cliente acessa a página de edição de perfil. Nessa página, o cliente pode customizar o seu perfil, adicionando ícones de suas conquistas e visualizando suas medalhas.       |
-| **Pré-condição**        | O cliente deve estar logado.     |
-| **Pós-condição**        | O perfil é editado conforme a vontade do cliente, e deve exibir tudo o que foi adicionado / modificado.        |
-| **Pontos de Inclusão**        |    Realizar Login (UC04)     |
-| **Pontos de Extensão**        |         |
-
-## Fluxo Principal
-
-|**Ações do Ator** | **Ações do Sistema** |
-|------------------|----------------------|
-|1. Cliente acessa a página de edição de perfil. | |
-|                  |2. Sistema apresenta tela de edição de perfil e exibe as personalizações que podem ser feitas, como exibir ícones de conquistas e visualizar medalhas. |
-|3. Cliente aperta o botão "Adicionar Ícones de Conquistas". | |
-|                  |4. Sistema busca quais Ícones de Conquistas o Cliente já possui, mostra cada um deles numa tela, e permite que ele exiba até 3 deles em seu perfil. |
-|5. Cliente seleciona 3 Ícones de sua escolha para exibir em seu perfil. | |
-|                  |6. Sistema exibe os Ícones escolhidos no perfil do Cliente. |
-|7. Cliente aperta o botão "Visualizar Medalhas. | |
-|                  |8. Sistema busca e exibe uma tela mostrando as medalhas já obtidas pelo Cliente ao longo de seus estudos. Fim do caso de uso. |
-
-## Fluxo Alternativo
-
-|**Ações do Ator** | **Ações do Sistema** |
-|------------------|----------------------|
-|5.1.1 Cliente tenta adicionar um ícone que ainda não obteve. | |
-|                  |5.1.2. Sistema apresenta uma mensagem dizendo que este ícone ainda não foi obtido, e permite que ele selecione outro. |
 
 ## Especificação do Caso de Uso 3: Iniciar e Completar uma Lição
 
@@ -215,6 +165,43 @@ Um aluno inicia uma aula, executa cada exercício, e finaliza a lição com suce
 |7.1.1 Cliente sai da lição antes de completá-la. | |
 | | 7.1.2 Sistema pergunta se o Cliente deseja realmente sair. |
 |7.1.3 Cliente afirma e volta para a Página de Módulos. | |
+
+## **Especificação do Caso de Uso 4: Realizar Login**
+
+### **Especificação do Caso de Uso**
+|Item | Especificação |
+| ---- | ---- |
+| **Identificador** | UC4 |
+| **Nome** | Realizar Login |
+| **Atores** | Aluno |
+| **Sumário** | Aluno realiza o login com e-mail e senha para poder acessar as lições visualizar e salvar seu progresso ao longo dos módulos |
+| **Pré-condição** | Instalar aplicativo, ter realizado cadastro |
+| **Pós-condição** |  |
+| **Pontos de Inclusão** | E-mail, Senha |
+| **Pontos de Extensão** | |
+
+### **Fluxo Principal**
+| Ações do Ator | Ações do Sistema |
+| --- | --- |
+| 1. Aluno abre o aplicativo |  |
+|  | 2.Sistema apresenta a tela de boas vindas com campos de login e opção de "Criar Conta" logo abaixo |
+| 3. Aluno digita seu E-mail e Senha nos campos "digite seu e-mail" e "digite sua senha" |  |
+|  | 4. Sistema verifica o banco de dados e confere se Fernet de e-mail e senha conferem com os dados inseridos pelo usuário |
+|  | 5. Sistema permite entrada de usuário |
+
+### **Fluxos Alternativos**
+
+| Ações do Ator | Ações do Sistema |
+| --- | --- |
+| 3.1.1 Aluno digita e-mail não cadastrado |  |
+|  | 3.1.2 Sistema informa que e-mail não foi encontrado e pede reinserção, também sugere aluno cadastrar caso não esteja |
+
+
+| Ações do Ator | Ações do Sistema |
+| --- | --- |
+| 3.2.1 Aluno digita e-mail cadastrado, mas Fernet de senha armazenado no banco e lido não conferem |  |
+|  | 3.2.2 Sistema informa que senha é inválida e pede reinserção |
+
 
 # Fontes
 - https://www.pertodigital.com.br/blog/quantas-pessoas-conhecem-libras-no-brasil-conheca-os-dados-mais-recentes-sobre-acessibilidade-digital
