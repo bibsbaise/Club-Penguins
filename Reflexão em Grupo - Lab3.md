@@ -34,15 +34,93 @@ Ator: Aluno
 
 <img width="386" height="326" alt="image" src="https://github.com/user-attachments/assets/8411b449-0204-463c-93c8-b48bb67fcff3" />
 
-
-
 ### Caso de uso mais importante do sistema
 - UC3: Iniciar e Completar uma Lição
   
 ## Desenvolver diagrama de caso de uso UML
 https://gitlab.com/GuiRodrr/club-penguins/-/blob/main/useCaseDiagram.md
 
-## **Detalhamento de caso de uso principal**
+## **Caso de uso: UC2 Cadastrar Usuário**
+
+### **Especificação do Caso de Uso**
+|Item | Especificação |
+| ---- | ---- |
+| **Identificador** | UC2 |
+| **Nome** | Cadastrar Usuário |
+| **Atores** | Aluno |
+| **Sumário** | Aluno realiza o cadastro com e-mail e senha para poder acessar as lições e salvar seu progresso ao longo dos módulos |
+| **Pré-condição** | Instalar aplicativo, possuir um e-mail válido |
+| **Pós-condição** |  |
+| **Pontos de Inclusão** | E-mail, Confirmar E-mail, Senha, Confirmar Senha |
+| **Pontos de Extensão** | |
+
+### **Fluxo Principal**
+| Ações do Ator | Ações do Sistema |
+| --- | --- |
+| 1. Aluno abre o aplicativo |  |
+|  | 2.Sistema apresenta a tela de boas vindas com campos de login e opção de "Criar Conta" logo abaixo |
+| 3. Aluno toca em "Criar Conta" |  |
+|  | 4. Sistema apresenta a tela de cadastro, com campos "digite seu e-mail", "confirme seu e-mail", "digite sua senha" e "confirme sua senha"|
+| 5. Aluno insere o seu E-mail uma vez em cada campo ("digite seu e-mail" e "confirme seu e-mail") e cria sua senha, inserindo-a uma vez em cada campo ("digite sua senha" e "confirme sua senha") |  |
+|  | 6. Sistema verifica se campos de E-mail e Senha estão em formato correto e conferem entre si |
+|  | 7. Sistema adiciona no banco de dados o cadastro do aluno |
+
+### **Fluxos Alternativos**
+
+| Ações do Ator | Ações do Sistema |
+| --- | --- |
+| 5.1.1 Aluno insere e-mail em formato inválido |  |
+|  | 5.1.2 Sistema Informa que e-mail informado está em formato inválido e solicita reinserção |
+
+
+| Ações do Ator | Ações do Sistema |
+| --- | --- |
+| 5.2.1 Aluno insere e-mails diferentes em campos "digite seu e-mail" e "confirme seu e-mail" |  |
+|  | 5.2.2 Sistema verifica que "digite seu e-mail" e "confirme seu e-mail" não conferem |
+|  | 5.2.3 Sistema Informa que campos de e-mail não conferem e solicita reinserção |
+
+
+| Ações do Ator | Ações do Sistema |
+| --- | --- |
+| 5.3.1 Aluno insere e-mails diferentes em campos "digite sua senha" e "confirme sua senha" |  |
+|  | 5.2.2 Sistema verifica que "digite sua senha" e "confirme sua senha" não conferem |
+|  | 5.2.3 Sistema Informa que campos de senha não conferem e solicita reinserção |
+
+## **Caso de uso: UC4 Realizar Login**
+
+### **Especificação do Caso de Uso**
+|Item | Especificação |
+| ---- | ---- |
+| **Identificador** | UC4 |
+| **Nome** | Realizar Login |
+| **Atores** | Aluno |
+| **Sumário** | Aluno realiza o login com e-mail e senha para poder acessar as lições visualizar e salvar seu progresso ao longo dos módulos |
+| **Pré-condição** | Instalar aplicativo, ter realizado cadastro |
+| **Pós-condição** |  |
+| **Pontos de Inclusão** | E-mail, Senha |
+| **Pontos de Extensão** | |
+
+### **Fluxo Principal**
+| Ações do Ator | Ações do Sistema |
+| --- | --- |
+| 1. Aluno abre o aplicativo |  |
+|  | 2.Sistema apresenta a tela de boas vindas com campos de login e opção de "Criar Conta" logo abaixo |
+| 3. Aluno digita seu E-mail e Senha nos campos "digite seu e-mail" e "digite sua senha" |  |
+|  | 4. Sistema verifica o banco de dados e confere se Fernet de e-mail e senha conferem com os dados inseridos pelo usuário |
+|  | 5. Sistema permite entrada de usuário |
+
+### **Fluxos Alternativos**
+
+| Ações do Ator | Ações do Sistema |
+| --- | --- |
+| 3.1.1 Aluno digita e-mail não cadastrado |  |
+|  | 3.1.2 Sistema informa que e-mail não foi encontrado e pede reinserção, também sugere aluno cadastrar caso não esteja |
+
+
+| Ações do Ator | Ações do Sistema |
+| --- | --- |
+| 3.2.1 Aluno digita e-mail cadastrado, mas Fernet de senha armazenado no banco e lido não conferem |  |
+|  | 3.2.2 Sistema informa que senha é inválida e pede reinserção |
 
 ### **Caso de uso: Iniciar e completar uma lição**
 
