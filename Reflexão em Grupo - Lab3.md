@@ -83,11 +83,11 @@ Um aluno inicia uma aula, executa cada exercício, e finaliza a lição com suce
 
 ## Especificação do Caso de Uso 3: Iniciar e Completar uma Lição
 
-| **Identificador** | UC01           |
+| **Identificador** | UC03           |
 |-------------------|----------------|
 | **Nome**          | Iniciar e Completar uma Lição |
-| **Atores**        | Cliente        |
-| **Sumário**        | Cliente acessa a página de       |
+| **Atores**        | Cliente       |
+| **Sumário**        | Cliente acessa a página de módulos. Nessa página, o cliente acessa os módulos disponíveis para serem estudados e pode escolher qual deseja aprender no momento. Ao escolher um módulo, ele deve selecionar a lição em que parou, ou, caso esteja iniciando um módulo, deve selecionar a lição inicial. Após iniciar a lição, ele terá 5 vidas, que serão perdidas a cada erro cometido. Para recarregá-las, o usuário terá que assistir um vídeo. Ao chegar ao exercício final e completá-lo, a lição será finalizada e uma nova lição será desbloqueada. |
 | **Pré-condição**        | O cliente deve estar logado.     |
 | **Pós-condição**        |        |
 | **Pontos de Inclusão**        |   Realizar Login (UC04)  |
@@ -97,14 +97,14 @@ Um aluno inicia uma aula, executa cada exercício, e finaliza a lição com suce
 
 |**Ações do Ator** | **Ações do Sistema** |
 |------------------|----------------------|
-|1. Cliente acessa a página da lição. | |
-|                  |2. Sistema apresenta tela. |
-|3. Cliente aperta o botão "". | |
-|                  |4. Sistema busca . |
-|5. Cliente . | |
-|                  |6. Sistema  |
-|7. Cliente aperta o botão "". | |
-|                  |8. Sistema. Fim do caso de uso. |
+|1. Cliente aperta o botão "Ver Módulos". | |
+|                  |2. Sistema apresenta tela de módulos. |
+|3. Cliente seleciona o módulo que deseja aprender. | |
+|                  |4. Sistema busca o progresso do Cliente para ver quais lições ele já pode acessar e apresenta o módulo para o Cliente. |
+|5. Cliente seleciona a lição que deseja aprender. | |
+|                  |6. Sistema apresenta a tela da lição, apresentando os exercícios a serem feitos.  |
+|7. Cliente completa a lição sem perder as vidas. | |
+|                  |8. Sistema registra o progresso do Cliente e desbloqueia novas lições. Fim do caso de uso. |
 
 # Fontes
 - https://www.pertodigital.com.br/blog/quantas-pessoas-conhecem-libras-no-brasil-conheca-os-dados-mais-recentes-sobre-acessibilidade-digital
