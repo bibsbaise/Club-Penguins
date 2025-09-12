@@ -49,7 +49,7 @@ https://gitlab.com/GuiRodrr/club-penguins/-/blob/main/useCaseDiagram.md
 | **Sumário**        | Cliente acessa a página de edição de perfil. Nessa página, o cliente pode customizar o seu perfil, adicionando ícones de suas conquistas e visualizando suas medalhas.       |
 | **Pré-condição**        | O cliente deve estar logado.     |
 | **Pós-condição**        | O perfil é editado conforme a vontade do cliente, e deve exibir tudo o que foi adicionado / modificado.        |
-| **Pontos de Inclusão**        |    Realizar Login (UC04)     |
+| **Pontos de Inclusão**        |    Realizar Login (UC4)     |
 | **Pontos de Extensão**        |         |
 
 ## Fluxo Principal
@@ -83,7 +83,7 @@ https://gitlab.com/GuiRodrr/club-penguins/-/blob/main/useCaseDiagram.md
 | **Sumário** | Aluno realiza o cadastro com e-mail e senha para poder acessar as lições e salvar seu progresso ao longo dos módulos |
 | **Pré-condição** | Instalar aplicativo, possuir um e-mail válido |
 | **Pós-condição** |  |
-| **Pontos de Inclusão** | E-mail, Confirmar E-mail, Senha, Confirmar Senha |
+| **Pontos de Inclusão** | |
 | **Pontos de Extensão** | |
 
 ### **Fluxo Principal**
@@ -120,14 +120,14 @@ https://gitlab.com/GuiRodrr/club-penguins/-/blob/main/useCaseDiagram.md
 
 ## Especificação do Caso de Uso 3: Iniciar e Completar uma Lição
 
-| **Identificador** | UC03           |
+| **Identificador** | UC3           |
 |-------------------|----------------|
 | **Nome**          | Iniciar e Completar uma Lição |
 | **Atores**        | Cliente       |
 | **Sumário**        | Cliente acessa a página de módulos. Nessa página, o cliente acessa os módulos disponíveis para serem estudados e pode escolher qual deseja aprender no momento. Ao escolher um módulo, ele deve selecionar a lição em que parou, ou, caso esteja iniciando um módulo, deve selecionar a lição inicial. Após iniciar a lição, ele terá 5 vidas, que serão perdidas a cada erro cometido. Para recarregá-las, o usuário terá que assistir um vídeo. Ao chegar ao exercício final e completá-lo, a lição será finalizada e uma nova lição será desbloqueada. |
 | **Pré-condição**        | O cliente deve estar logado.     |
 | **Pós-condição**        |        |
-| **Pontos de Inclusão**        |   Realizar Login (UC04)  |
+| **Pontos de Inclusão**        |   Realizar Login (UC4)  |
 | **Pontos de Extensão**        |         |
 
 ## Fluxo Principal
@@ -177,7 +177,7 @@ https://gitlab.com/GuiRodrr/club-penguins/-/blob/main/useCaseDiagram.md
 | **Sumário** | Aluno realiza o login com e-mail e senha para poder acessar as lições visualizar e salvar seu progresso ao longo dos módulos |
 | **Pré-condição** | Instalar aplicativo, ter realizado cadastro |
 | **Pós-condição** |  |
-| **Pontos de Inclusão** | E-mail, Senha |
+| **Pontos de Inclusão** | Cadastrar Usuário (UC2) |
 | **Pontos de Extensão** | |
 
 ### **Fluxo Principal**
