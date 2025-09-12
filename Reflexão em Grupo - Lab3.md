@@ -86,9 +86,6 @@ https://gitlab.com/GuiRodrr/club-penguins/-/blob/main/useCaseDiagram.md
 |  | 5.2.2 Sistema verifica que "digite sua senha" e "confirme sua senha" não conferem |
 |  | 5.2.3 Sistema Informa que campos de senha não conferem e solicita reinserção |
 
-
-### **Diagrama**
-
 ## **Caso de uso: UC4 Realizar Login**
 
 ### **Especificação do Caso de Uso**
@@ -124,11 +121,6 @@ https://gitlab.com/GuiRodrr/club-penguins/-/blob/main/useCaseDiagram.md
 | --- | --- |
 | 3.2.1 Aluno digita e-mail cadastrado, mas Fernet de senha armazenado no banco e lido não conferem |  |
 |  | 3.2.2 Sistema informa que senha é inválida e pede reinserção |
-
-
-### **Diagrama**
-
-
 
 ### **Caso de uso: Iniciar e completar uma lição**
 
