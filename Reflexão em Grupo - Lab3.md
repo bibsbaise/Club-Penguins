@@ -65,7 +65,7 @@ Um aluno inicia uma aula, executa cada exercício, e finaliza a lição com suce
 | **Sumário**        | Cliente acessa a página de edição de perfil. Nessa página, o cliente pode customizar o seu perfil, adicionando ícones de suas conquistas e visualizando suas medalhas.       |
 | **Pré-condição**        | O cliente deve estar logado.     |
 | **Pós-condição**        | O perfil é editado conforme a vontade do cliente, e deve exibir tudo o que foi adicionado / modificado.        |
-| **Pontos de Inclusão**        |         |
+| **Pontos de Inclusão**        |    Realizar Login (UC04)     |
 | **Pontos de Extensão**        |         |
 
 ## Fluxo Principal
@@ -81,7 +81,30 @@ Um aluno inicia uma aula, executa cada exercício, e finaliza a lição com suce
 |7. Cliente aperta o botão "Visualizar Medalhas. | |
 |                  |8. Sistema busca e exibe uma tela mostrando as medalhas já obtidas pelo Cliente ao longo de seus estudos. Fim do caso de uso. |
 
+## Especificação do Caso de Uso 3: Iniciar e Completar uma Lição
 
+| **Identificador** | UC01           |
+|-------------------|----------------|
+| **Nome**          | Iniciar e Completar uma Lição |
+| **Atores**        | Cliente        |
+| **Sumário**        | Cliente acessa a página de       |
+| **Pré-condição**        | O cliente deve estar logado.     |
+| **Pós-condição**        |        |
+| **Pontos de Inclusão**        |   Realizar Login (UC04)  |
+| **Pontos de Extensão**        |         |
+
+## Fluxo Principal
+
+|**Ações do Ator** | **Ações do Sistema** |
+|------------------|----------------------|
+|1. Cliente acessa a página da lição. | |
+|                  |2. Sistema apresenta tela. |
+|3. Cliente aperta o botão "". | |
+|                  |4. Sistema busca . |
+|5. Cliente . | |
+|                  |6. Sistema  |
+|7. Cliente aperta o botão "". | |
+|                  |8. Sistema. Fim do caso de uso. |
 
 # Fontes
 - https://www.pertodigital.com.br/blog/quantas-pessoas-conhecem-libras-no-brasil-conheca-os-dados-mais-recentes-sobre-acessibilidade-digital
