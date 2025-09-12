@@ -32,7 +32,7 @@ Ator: Aluno
 - UC3: Iniciar e Completar uma Lição
 - UC4: Realizar Login
 
-<img width="386" height="326" alt="image" src="https://github.com/user-attachments/assets/17842a6b-b630-4907-b768-70a7ecd935cc" />
+<img width="386" height="326" alt="image" src="https://github.com/user-attachments/assets/8411b449-0204-463c-93c8-b48bb67fcff3" />
 
 ### Caso de uso mais importante do sistema
 - UC3: Iniciar e Completar uma Lição
@@ -135,6 +135,86 @@ Um aluno inicia uma aula, executa cada exercício, e finaliza a lição com suce
 
 
 <br><br>
+
+## Especificação do Caso de Uso 1: Editar perfil
+
+| **Identificador** | UC01           |
+|-------------------|----------------|
+| **Nome**          | Editar perfil  |
+| **Atores**        | Cliente        |
+| **Sumário**        | Cliente acessa a página de edição de perfil. Nessa página, o cliente pode customizar o seu perfil, adicionando ícones de suas conquistas e visualizando suas medalhas.       |
+| **Pré-condição**        | O cliente deve estar logado.     |
+| **Pós-condição**        | O perfil é editado conforme a vontade do cliente, e deve exibir tudo o que foi adicionado / modificado.        |
+| **Pontos de Inclusão**        |    Realizar Login (UC04)     |
+| **Pontos de Extensão**        |         |
+
+## Fluxo Principal
+
+|**Ações do Ator** | **Ações do Sistema** |
+|------------------|----------------------|
+|1. Cliente acessa a página de edição de perfil. | |
+|                  |2. Sistema apresenta tela de edição de perfil e exibe as personalizações que podem ser feitas, como exibir ícones de conquistas e visualizar medalhas. |
+|3. Cliente aperta o botão "Adicionar Ícones de Conquistas". | |
+|                  |4. Sistema busca quais Ícones de Conquistas o Cliente já possui, mostra cada um deles numa tela, e permite que ele exiba até 3 deles em seu perfil. |
+|5. Cliente seleciona 3 Ícones de sua escolha para exibir em seu perfil. | |
+|                  |6. Sistema exibe os Ícones escolhidos no perfil do Cliente. |
+|7. Cliente aperta o botão "Visualizar Medalhas. | |
+|                  |8. Sistema busca e exibe uma tela mostrando as medalhas já obtidas pelo Cliente ao longo de seus estudos. Fim do caso de uso. |
+
+## Fluxo Alternativo
+
+|**Ações do Ator** | **Ações do Sistema** |
+|------------------|----------------------|
+|5.1.1 Cliente tenta adicionar um ícone que ainda não obteve. | |
+|                  |5.1.2. Sistema apresenta uma mensagem dizendo que este ícone ainda não foi obtido, e permite que ele selecione outro. |
+
+## Especificação do Caso de Uso 3: Iniciar e Completar uma Lição
+
+| **Identificador** | UC03           |
+|-------------------|----------------|
+| **Nome**          | Iniciar e Completar uma Lição |
+| **Atores**        | Cliente       |
+| **Sumário**        | Cliente acessa a página de módulos. Nessa página, o cliente acessa os módulos disponíveis para serem estudados e pode escolher qual deseja aprender no momento. Ao escolher um módulo, ele deve selecionar a lição em que parou, ou, caso esteja iniciando um módulo, deve selecionar a lição inicial. Após iniciar a lição, ele terá 5 vidas, que serão perdidas a cada erro cometido. Para recarregá-las, o usuário terá que assistir um vídeo. Ao chegar ao exercício final e completá-lo, a lição será finalizada e uma nova lição será desbloqueada. |
+| **Pré-condição**        | O cliente deve estar logado.     |
+| **Pós-condição**        |        |
+| **Pontos de Inclusão**        |   Realizar Login (UC04)  |
+| **Pontos de Extensão**        |         |
+
+## Fluxo Principal
+
+|**Ações do Ator** | **Ações do Sistema** |
+|------------------|----------------------|
+|1. Cliente aperta o botão "Ver Módulos". | |
+|                  |2. Sistema apresenta a tela de Módulos. |
+|3. Cliente seleciona o módulo que deseja aprender. | |
+|                  |4. Sistema busca o progresso do Cliente para ver quais lições ele já pode acessar e apresenta o módulo para o Cliente. |
+|5. Cliente seleciona a lição que deseja aprender. | |
+|                  |6. Sistema apresenta a tela da lição, apresentando os exercícios a serem feitos.  |
+|7. Cliente completa a lição sem perder as vidas. | |
+|                  |8. Sistema registra o progresso do Cliente e desbloqueia novas lições. Fim do caso de uso. |
+
+## Fluxos Alternativos
+
+| **Ações do Ator** | **Ações do Sistema** |
+|------------------|----------------------|
+|7.1.1 Cliente perde as vidas disponíveis. | |
+| | 7.1.2 Sistema pergunta se o Cliente deseja assistir um vídeo para recarregar suas vidas. |
+|7.1.3 Cliente assiste o vídeo. | |
+| | 7.1.4 Sistema recarrega as vidas do Cliente. |
+| 7.1.5 Cliente conclui a lição. | |
+
+| **Ações do Ator** | **Ações do Sistema** |
+|------------------|----------------------|
+|7.1.1 Cliente perde as vidas disponíveis. | |
+| | 7.1.2 Sistema pergunta se o Cliente deseja assistir um vídeo para recarregar suas vidas. |
+|7.1.3 Cliente opta por não assistir o vídeo. | |
+| | 7.1.4 Sistema informa que o Cliente deverá esperar por alguns minutos para que suas vidas sejam recarregadas e faz com que ele retorne para a Página de Módulos. |
+
+| **Ações do Ator** | **Ações do Sistema** |
+|------------------|----------------------|
+|7.1.1 Cliente sai da lição antes de completá-la. | |
+| | 7.1.2 Sistema pergunta se o Cliente deseja realmente sair. |
+|7.1.3 Cliente afirma e volta para a Página de Módulos. | |
 
 # Fontes
 - https://www.pertodigital.com.br/blog/quantas-pessoas-conhecem-libras-no-brasil-conheca-os-dados-mais-recentes-sobre-acessibilidade-digital
