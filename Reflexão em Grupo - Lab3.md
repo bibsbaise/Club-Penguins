@@ -204,22 +204,9 @@ https://gitlab.com/GuiRodrr/club-penguins/-/blob/main/useCaseDiagram.md
 
 ### **Diagrama de classe de domínio**
 
-```plantuml
-@startuml
-class Cliente
-class Modulo
-class Licao
-class Perfil
+<img width="421" height="211" alt="image" src="https://github.com/user-attachments/assets/24e5eb82-f97b-4a48-b692-4cd0282d7c2c" />
 
 
-
-Cliente "*" -r- "*" Modulo :  acessa
-Cliente "1" -l- "1" Perfil :  acessa
-Cliente "*" -- "*" Licao :  realiza
-
-@enduml
-
-```
 
 
 
