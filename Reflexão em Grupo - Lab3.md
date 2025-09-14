@@ -202,6 +202,26 @@ https://gitlab.com/GuiRodrr/club-penguins/-/blob/main/useCaseDiagram.md
 | 3.2.1 Aluno digita e-mail cadastrado, mas Fernet de senha armazenado no banco e lido não conferem |  |
 |  | 3.2.2 Sistema informa que senha é inválida e pede reinserção |
 
+### **Diagrama de classe de domínio**
+
+```plantuml
+@startuml
+class Cliente
+class Modulo
+class Licao
+class Perfil
+
+
+
+Cliente "*" -r- "*" Modulo :  acessa
+Cliente "1" -l- "1" Perfil :  acessa
+Cliente "*" -- "*" Licao :  realiza
+
+@enduml
+
+```
+
+
 
 # Fontes
 - https://www.pertodigital.com.br/blog/quantas-pessoas-conhecem-libras-no-brasil-conheca-os-dados-mais-recentes-sobre-acessibilidade-digital
