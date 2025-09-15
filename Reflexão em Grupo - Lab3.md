@@ -210,6 +210,20 @@ https://gitlab.com/GuiRodrr/club-penguins/-/blob/main/useCaseDiagram.md
 
 <img width="396" height="186" alt="image" src="https://github.com/user-attachments/assets/637d4f3a-3aca-42fb-95f0-bab6f7251599" />
 
+### **Diagramas de Sequência**
+
+## **UC1 - Editar Perfil**
+
+<img width="479" height="676" alt="image" src="https://github.com/user-attachments/assets/01cf78e9-6607-4c21-a831-7b797dcbf878" />
+
+## **UC2 - Cadastrar usuário**
+
+## **UC3 - Iniciar e Completar uma Lição**
+
+<img width="850" height="851" alt="image" src="https://github.com/user-attachments/assets/ec102b67-7442-4a8f-8153-1cf4c5c8b713" />
+
+## **UC4 - Realizar Login**
+
 # Fontes
 - https://www.pertodigital.com.br/blog/quantas-pessoas-conhecem-libras-no-brasil-conheca-os-dados-mais-recentes-sobre-acessibilidade-digital
 - https://desculpenaoouvi.com.br/ibge-confirma-surdez-nao-e-sinonimo-de-libras/
