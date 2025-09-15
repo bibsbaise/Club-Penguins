@@ -30,42 +30,26 @@ Ator: Aluno
 - UC1: Editar perfil
 - UC2: Cadastrar usuário
 - UC3: Iniciar e Completar uma Lição
+- UC4: Realizar Login
 
-<img width="487" height="328" alt="image" src="https://github.com/user-attachments/assets/a4dd94e6-47b2-4823-931a-b0c0f2988f8c" />
+## Diagrama de caso de uso UML
+https://gitlab.com/GuiRodrr/club-penguins/-/blob/main/useCaseDiagram.md
 
+<img width="677" height="273" alt="image" src="https://github.com/user-attachments/assets/d953c138-feef-48a7-b4fa-9e529e0be940" />
 
 ### Caso de uso mais importante do sistema
 - UC3: Iniciar e Completar uma Lição
-  
-## Desenvolver diagrama de caso de uso UML
-https://gitlab.com/GuiRodrr/club-penguins/-/blob/main/useCaseDiagram.md
-
-## **Detalhamento de caso de uso principal**
-
-### **Caso de uso: Iniciar e completar uma lição**
-
-**Cenário de sucesso principal:** 
-Um aluno inicia uma aula, executa cada exercício, e finaliza a lição com sucesso.
-
-**Cenários alternativos:** <br>
-- Se o aluno gastar todas as suas vidas em erros, e decidir não recarregá-las, não será possível completar a lição. <br>
-- Se o aluno gastar todas as suas vidas em erros ele poderá gastar suas moedas para recarregar e voltar de onde parou. <br>
-- Se o aluno errar algum dos exercícios, será necessário refazê-lo no final da lição até ter sucesso em todos os exercícios. <br>
-- Se o aluno sair no meio da lição, será necessário refazê-la desde o começo. <br>
-
-
-<br><br>
 
 ## Especificação do Caso de Uso 1: Editar perfil
 
-| **Identificador** | UC01           |
+| **Identificador** | UC1           |
 |-------------------|----------------|
 | **Nome**          | Editar perfil  |
 | **Atores**        | Cliente        |
 | **Sumário**        | Cliente acessa a página de edição de perfil. Nessa página, o cliente pode customizar o seu perfil, adicionando ícones de suas conquistas e visualizando suas medalhas.       |
 | **Pré-condição**        | O cliente deve estar logado.     |
 | **Pós-condição**        | O perfil é editado conforme a vontade do cliente, e deve exibir tudo o que foi adicionado / modificado.        |
-| **Pontos de Inclusão**        |    Realizar Login (UC04)     |
+| **Pontos de Inclusão**        |    Realizar Login (UC4)     |
 | **Pontos de Extensão**        |         |
 
 ## Fluxo Principal
@@ -88,16 +72,66 @@ Um aluno inicia uma aula, executa cada exercício, e finaliza a lição com suce
 |5.1.1 Cliente tenta adicionar um ícone que ainda não obteve. | |
 |                  |5.1.2. Sistema apresenta uma mensagem dizendo que este ícone ainda não foi obtido, e permite que ele selecione outro. |
 
+## **Especificação de Caso de Uso 2: Cadastrar Usuário**
+
+### **Especificação do Caso de Uso**
+|Item | Especificação |
+| ---- | ---- |
+| **Identificador** | UC2 |
+| **Nome** | Cadastrar Usuário |
+| **Atores** | Aluno |
+| **Sumário** | Aluno realiza o cadastro com e-mail e senha para poder acessar as lições e salvar seu progresso ao longo dos módulos |
+| **Pré-condição** | Instalar aplicativo, possuir um e-mail válido |
+| **Pós-condição** |  |
+| **Pontos de Inclusão** | |
+| **Pontos de Extensão** | |
+
+### **Fluxo Principal**
+
+| Ações do Ator | Ações do Sistema |
+| --- | --- |
+| 1. Aluno abre o aplicativo |  |
+|  | 2.Sistema apresenta a tela de boas vindas com campos de login e opção de "Criar Conta" logo abaixo |
+| 3. Aluno toca em "Criar Conta" |  |
+|  | 4. Sistema apresenta a tela de cadastro, com campos "digite seu e-mail", "confirme seu e-mail", "digite sua senha" e "confirme sua senha"|
+| 5. Aluno insere o seu E-mail uma vez em cada campo ("digite seu e-mail" e "confirme seu e-mail") e cria sua senha, inserindo-a uma vez em cada campo ("digite sua senha" e "confirme sua senha") |  |
+|  | 6. Sistema verifica se campos de E-mail e Senha estão em formato correto e conferem entre si |
+|  | 7. Sistema adiciona no banco de dados o cadastro do aluno |
+
+### **Fluxos Alternativos**
+
+| Ações do Ator | Ações do Sistema |
+| --- | --- |
+| 5.1.1 Aluno insere e-mail em formato inválido |  |
+|  | 5.1.2 Sistema Informa que e-mail informado está em formato inválido e solicita reinserção |
+
+
+| Ações do Ator | Ações do Sistema |
+| --- | --- |
+| 5.2.1 Aluno insere e-mails diferentes em campos "digite seu e-mail" e "confirme seu e-mail" |  |
+|  | 5.2.2 Sistema verifica que "digite seu e-mail" e "confirme seu e-mail" não conferem |
+|  | 5.2.3 Sistema Informa que campos de e-mail não conferem e solicita reinserção |
+
+
+| Ações do Ator | Ações do Sistema |
+| --- | --- |
+| 5.3.1 Aluno insere e-mails diferentes em campos "digite sua senha" e "confirme sua senha" |  |
+|  | 5.2.2 Sistema verifica que "digite sua senha" e "confirme sua senha" não conferem |
+|  | 5.2.3 Sistema Informa que campos de senha não conferem e solicita reinserção |
+
+### **Diagrama de Sequência**
+
+
 ## Especificação do Caso de Uso 3: Iniciar e Completar uma Lição
 
-| **Identificador** | UC03           |
+| **Identificador** | UC3           |
 |-------------------|----------------|
 | **Nome**          | Iniciar e Completar uma Lição |
 | **Atores**        | Cliente       |
 | **Sumário**        | Cliente acessa a página de módulos. Nessa página, o cliente acessa os módulos disponíveis para serem estudados e pode escolher qual deseja aprender no momento. Ao escolher um módulo, ele deve selecionar a lição em que parou, ou, caso esteja iniciando um módulo, deve selecionar a lição inicial. Após iniciar a lição, ele terá 5 vidas, que serão perdidas a cada erro cometido. Para recarregá-las, o usuário terá que assistir um vídeo. Ao chegar ao exercício final e completá-lo, a lição será finalizada e uma nova lição será desbloqueada. |
 | **Pré-condição**        | O cliente deve estar logado.     |
 | **Pós-condição**        |        |
-| **Pontos de Inclusão**        |   Realizar Login (UC04)  |
+| **Pontos de Inclusão**        |   Realizar Login (UC4)  |
 | **Pontos de Extensão**        |         |
 
 ## Fluxo Principal
@@ -135,6 +169,46 @@ Um aluno inicia uma aula, executa cada exercício, e finaliza a lição com suce
 |7.1.1 Cliente sai da lição antes de completá-la. | |
 | | 7.1.2 Sistema pergunta se o Cliente deseja realmente sair. |
 |7.1.3 Cliente afirma e volta para a Página de Módulos. | |
+
+## **Especificação do Caso de Uso 4: Realizar Login**
+
+### **Especificação do Caso de Uso**
+|Item | Especificação |
+| ---- | ---- |
+| **Identificador** | UC4 |
+| **Nome** | Realizar Login |
+| **Atores** | Aluno |
+| **Sumário** | Aluno realiza o login com e-mail e senha para poder acessar as lições visualizar e salvar seu progresso ao longo dos módulos |
+| **Pré-condição** | Instalar aplicativo, ter realizado cadastro |
+| **Pós-condição** |  |
+| **Pontos de Inclusão** | Cadastrar Usuário (UC2) |
+| **Pontos de Extensão** | |
+
+### **Fluxo Principal**
+| Ações do Ator | Ações do Sistema |
+| --- | --- |
+| 1. Aluno abre o aplicativo |  |
+|  | 2.Sistema apresenta a tela de boas vindas com campos de login e opção de "Criar Conta" logo abaixo |
+| 3. Aluno digita seu E-mail e Senha nos campos "digite seu e-mail" e "digite sua senha" |  |
+|  | 4. Sistema verifica o banco de dados e confere se Fernet de e-mail e senha conferem com os dados inseridos pelo usuário |
+|  | 5. Sistema permite entrada de usuário |
+
+### **Fluxos Alternativos**
+
+| Ações do Ator | Ações do Sistema |
+| --- | --- |
+| 3.1.1 Aluno digita e-mail não cadastrado |  |
+|  | 3.1.2 Sistema informa que e-mail não foi encontrado e pede reinserção, também sugere aluno cadastrar caso não esteja |
+
+
+| Ações do Ator | Ações do Sistema |
+| --- | --- |
+| 3.2.1 Aluno digita e-mail cadastrado, mas Fernet de senha armazenado no banco e lido não conferem |  |
+|  | 3.2.2 Sistema informa que senha é inválida e pede reinserção |
+
+### **Diagrama de classe de domínio**
+
+<img width="396" height="186" alt="image" src="https://github.com/user-attachments/assets/637d4f3a-3aca-42fb-95f0-bab6f7251599" />
 
 # Fontes
 - https://www.pertodigital.com.br/blog/quantas-pessoas-conhecem-libras-no-brasil-conheca-os-dados-mais-recentes-sobre-acessibilidade-digital
