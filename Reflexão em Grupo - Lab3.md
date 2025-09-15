@@ -210,6 +210,10 @@ https://gitlab.com/GuiRodrr/club-penguins/-/blob/main/useCaseDiagram.md
 
 <img width="396" height="186" alt="image" src="https://github.com/user-attachments/assets/637d4f3a-3aca-42fb-95f0-bab6f7251599" />
 
+### *Diagrama de Sequência - Caso de Uso 1: Editar perfil
+
+### *Diagrama de Sequência - Caso de Uso 3: Iniciar e Completar uma Lição
+
 # Fontes
 - https://www.pertodigital.com.br/blog/quantas-pessoas-conhecem-libras-no-brasil-conheca-os-dados-mais-recentes-sobre-acessibilidade-digital
 - https://desculpenaoouvi.com.br/ibge-confirma-surdez-nao-e-sinonimo-de-libras/
