@@ -87,6 +87,7 @@ https://gitlab.com/GuiRodrr/club-penguins/-/blob/main/useCaseDiagram.md
 | **Pontos de Extensão** | |
 
 ### **Fluxo Principal**
+
 | Ações do Ator | Ações do Sistema |
 | --- | --- |
 | 1. Aluno abre o aplicativo |  |
@@ -117,6 +118,9 @@ https://gitlab.com/GuiRodrr/club-penguins/-/blob/main/useCaseDiagram.md
 | 5.3.1 Aluno insere e-mails diferentes em campos "digite sua senha" e "confirme sua senha" |  |
 |  | 5.2.2 Sistema verifica que "digite sua senha" e "confirme sua senha" não conferem |
 |  | 5.2.3 Sistema Informa que campos de senha não conferem e solicita reinserção |
+
+### **Diagrama de Sequência**
+
 
 ## Especificação do Caso de Uso 3: Iniciar e Completar uma Lição
 
@@ -204,11 +208,7 @@ https://gitlab.com/GuiRodrr/club-penguins/-/blob/main/useCaseDiagram.md
 
 ### **Diagrama de classe de domínio**
 
-<img width="421" height="211" alt="image" src="https://github.com/user-attachments/assets/24e5eb82-f97b-4a48-b692-4cd0282d7c2c" />
-
-
-
-
+<img width="396" height="186" alt="image" src="https://github.com/user-attachments/assets/637d4f3a-3aca-42fb-95f0-bab6f7251599" />
 
 # Fontes
 - https://www.pertodigital.com.br/blog/quantas-pessoas-conhecem-libras-no-brasil-conheca-os-dados-mais-recentes-sobre-acessibilidade-digital
