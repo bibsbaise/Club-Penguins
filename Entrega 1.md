@@ -65,12 +65,17 @@ https://gitlab.com/GuiRodrr/club-penguins/-/blob/main/useCaseDiagram.md
 |7. Cliente aperta o botão "Visualizar Medalhas. | |
 |                  |8. Sistema busca e exibe uma tela mostrando as medalhas já obtidas pelo Cliente ao longo de seus estudos. Fim do caso de uso. |
 
-## Fluxo Alternativo
+## Fluxos Alternativos
 
 |**Ações do Ator** | **Ações do Sistema** |
 |------------------|----------------------|
 |5.1.1 Cliente tenta adicionar um ícone que ainda não obteve. | |
 |                  |5.1.2. Sistema apresenta uma mensagem dizendo que este ícone ainda não foi obtido, e permite que ele selecione outro. |
+
+|**Ações do Ator** | **Ações do Sistema** |
+|------------------|----------------------|
+|5.1.1 Cliente tenta selecionar mais de três ícones. | |
+|                  |5.1.2. Sistema apresenta uma mensagem dizendo que ele já selecionou 3 ícones e mantém a seleção anterior. |
 
 ## **Especificação de Caso de Uso 2: Cadastrar Usuário**
 
