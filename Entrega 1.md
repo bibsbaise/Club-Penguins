@@ -212,7 +212,7 @@ https://gitlab.com/GuiRodrr/club-penguins/-/blob/main/useCaseDiagram.md
 
 <img width="396" height="186" alt="image" src="https://github.com/user-attachments/assets/637d4f3a-3aca-42fb-95f0-bab6f7251599" />
 
-### **Diagramas de Sequência**
+# **Diagramas de Sequência**
 
 ## **UC1 - Editar Perfil**
 
@@ -220,11 +220,15 @@ https://gitlab.com/GuiRodrr/club-penguins/-/blob/main/useCaseDiagram.md
 
 ## **UC2 - Cadastrar usuário**
 
+<img width="709" height="771" alt="image" src="https://github.com/user-attachments/assets/f38d119b-49a7-4d4b-b84a-56c6c0872d6c" />
+
 ## **UC3 - Iniciar e Completar uma Lição**
 
 <img width="978" height="1544" alt="image" src="https://github.com/user-attachments/assets/61635342-8fed-447f-8b1b-a30766c20952" />
 
 ## **UC4 - Realizar Login**
+
+<img width="822" height="867" alt="image" src="https://github.com/user-attachments/assets/f79a117b-b438-40ea-9355-adef32184aa2" />
 
 # Fontes
 - https://www.pertodigital.com.br/blog/quantas-pessoas-conhecem-libras-no-brasil-conheca-os-dados-mais-recentes-sobre-acessibilidade-digital
