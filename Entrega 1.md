@@ -219,13 +219,13 @@ https://gitlab.com/GuiRodrr/club-penguins/-/blob/main/useCaseDiagram.md
 
 ## **UC1 - Editar Perfil**
 
-<img width="479" height="676" alt="image" src="https://github.com/user-attachments/assets/01cf78e9-6607-4c21-a831-7b797dcbf878" />
+<img width="651" height="871" alt="image" src="https://github.com/user-attachments/assets/ad58b92f-ded8-4812-b993-02f184ba74cf" />
 
 ## **UC2 - Cadastrar usuário**
 
 ## **UC3 - Iniciar e Completar uma Lição**
 
-<img width="850" height="851" alt="image" src="https://github.com/user-attachments/assets/ec102b67-7442-4a8f-8153-1cf4c5c8b713" />
+<img width="978" height="1544" alt="image" src="https://github.com/user-attachments/assets/61635342-8fed-447f-8b1b-a30766c20952" />
 
 ## **UC4 - Realizar Login**
 
