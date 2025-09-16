@@ -74,8 +74,8 @@ https://gitlab.com/GuiRodrr/club-penguins/-/blob/main/useCaseDiagram.md
 
 |**Ações do Ator** | **Ações do Sistema** |
 |------------------|----------------------|
-|5.1.1 Cliente tenta selecionar mais de três ícones. | |
-|                  |5.1.2. Sistema apresenta uma mensagem dizendo que ele já selecionou 3 ícones e mantém a seleção anterior. |
+|5.2.1 Cliente tenta selecionar mais de três ícones. | |
+|                  |5.2.2. Sistema apresenta uma mensagem dizendo que ele já selecionou 3 ícones e mantém a seleção anterior. |
 
 ## **Especificação de Caso de Uso 2: Cadastrar Usuário**
 
