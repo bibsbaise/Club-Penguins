@@ -157,16 +157,16 @@ https://gitlab.com/GuiRodrr/club-penguins/-/blob/main/useCaseDiagram.md
 | **Ações do Ator** | **Ações do Sistema** |
 |------------------|----------------------|
 |7.1.1 Cliente perde as vidas disponíveis. | |
-| | 7.1.2 Sistema pergunta se o Cliente deseja assistir um vídeo para recarregar suas vidas. |
-|7.1.3 Cliente assiste o vídeo. | |
+| | 7.1.2 Sistema pergunta se o Cliente deseja pagar moedas para recarregar as vidas. |
+|7.1.3 Cliente paga moedas. | |
 | | 7.1.4 Sistema recarrega as vidas do Cliente. |
 | 7.1.5 Cliente conclui a lição. | |
 
 | **Ações do Ator** | **Ações do Sistema** |
 |------------------|----------------------|
 |7.1.1 Cliente perde as vidas disponíveis. | |
-| | 7.1.2 Sistema pergunta se o Cliente deseja assistir um vídeo para recarregar suas vidas. |
-|7.1.3 Cliente opta por não assistir o vídeo. | |
+| | 7.1.2 Sistema pergunta se o Cliente deseja pagar moedas para recarregar as vidas. |
+|7.1.3 Cliente opta por não pagar moedas. | |
 | | 7.1.4 Sistema informa que o Cliente deverá esperar por alguns minutos para que suas vidas sejam recarregadas e faz com que ele retorne para a Página de Módulos. |
 
 | **Ações do Ator** | **Ações do Sistema** |
