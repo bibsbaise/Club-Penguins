@@ -209,10 +209,7 @@ https://gitlab.com/GuiRodrr/club-penguins/-/blob/main/useCaseDiagram.md
 |  | 3.2.2 Sistema informa que senha é inválida e pede reinserção |
 
 ### **Diagrama de classe de domínio**
-Versão 1:
 <img width="727" height="422" alt="image" src="https://github.com/user-attachments/assets/3b417d83-e11d-4610-8445-5f59e5c074c5" />
-Versão 2:
-![Uploading image.png…]()
 
 
 # **Diagramas de Sequência**
