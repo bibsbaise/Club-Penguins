@@ -38,5 +38,10 @@ Após a conclusão, rode novamente o comando `pip list`
 
 Ele irá listar tudo o que foi baixado
 
-# 4. Rodar o backend
+# 4. .env
+Para rodar corretamente você vai precisar do arquivo `.env`. Este possui todas as informações sensíveis e confidenciais do código. 
+
+Verifique se ele está visível para você no codespace, caso contrário, me procure que enviarei a versão atualizada.
+
+# 5. Rodar o backend
 Rode o comando `flask run --port [porta do backend]`
