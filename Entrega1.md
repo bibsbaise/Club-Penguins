@@ -230,6 +230,38 @@ https://gitlab.com/GuiRodrr/club-penguins/-/blob/main/useCaseDiagram.md
 
 <img width="822" height="867" alt="image" src="https://github.com/user-attachments/assets/f79a117b-b438-40ea-9355-adef32184aa2" />
 
+# **Modelagem**
+
+<!-- 
+```
+@startuml Modelagem
+
+node "Browser" 
+
+node "ServidorAplicacao (AWS)"{
+  node "app" {
+    node "app.py" 
+  }
+  
+  node "db" {
+    node "mongo.db" 
+  }
+}
+
+[Browser] -- [ServidorAplicacao (AWS)]
+[app] -- [db]
+
+left to right direction
+
+@enduml
+```
+-->
+
+![](Modelagem.svg)
+
+
+
+
 # Fontes
 - https://www.pertodigital.com.br/blog/quantas-pessoas-conhecem-libras-no-brasil-conheca-os-dados-mais-recentes-sobre-acessibilidade-digital
 - https://desculpenaoouvi.com.br/ibge-confirma-surdez-nao-e-sinonimo-de-libras/
