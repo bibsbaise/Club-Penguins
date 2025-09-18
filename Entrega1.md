@@ -232,32 +232,7 @@ https://gitlab.com/GuiRodrr/club-penguins/-/blob/main/useCaseDiagram.md
 
 # **Modelagem**
 
-<!-- 
-```
-@startuml Modelagem
-
-node "Browser" 
-
-node "ServidorAplicacao (AWS)"{
-  node "app" {
-    node "app.py" 
-  }
-  
-  node "db" {
-    node "mongo.db" 
-  }
-}
-
-[Browser] -- [ServidorAplicacao (AWS)]
-[app] -- [db]
-
-left to right direction
-
-@enduml
-```
--->
-
-![](Modelagem.svg)
+<img width="714" height="272" alt="TO-n2i8m48RtUueZamwjkvJIwgA3K6Z1eNH8crW3QHBIg8ZqtKrR5HqS3kw--xYVItf7hRjq4W-QSKbRtW4etoBPM7thkINu1ZctLy6qJOqK3MsenaLwp9Va0OYpGOqXE8vV83HtVm9nyFKHMVthTLgrEXpfP0u0vIk-mY30yazqjSOesXL55iTG-gnPPlN4YsssseyRaFpaq6cqeZqxPCBonWcj01AkcF_z2G00" src="https://github.com/user-attachments/assets/08cfd25d-4bb0-47eb-b588-df49fada3bf5" />
 
 
 # Requisitos
