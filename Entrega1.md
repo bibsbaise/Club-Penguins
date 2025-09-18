@@ -260,6 +260,68 @@ left to right direction
 ![](Modelagem.svg)
 
 
+# Requisitos
+**Requisitos Funcionais:**
+| ID | Descrição |
+|--|--|
+| RF01 | O sistema deve exigir que o usuário esteja autenticado para acessar qualquer funcionalidade. |
+| RF02 | O sistema deve permitir que o usuário entre no sistema usando um e-mail e senha já cadastrados, ou se cadastrando. |
+| RF03 | O sistema deve exibir, na Home, a lista dos módulos disponíveis. Para cada módulo, exibir seu nome, a quantidade de níveis já realizados e a quantidade total de níveis do módulo. |
+| RF04 | O sistema deve exibir, no header, a quantidade de streaks de dias consecutivos com atividades, o número de vidas disponíveis, total de moedas e um item para acessar o perfil do usuário. |
+| RF05 | O sistema deve permitir que o usuário altere os dados informados no cadastro. |
+| RF06 | O sistema deve exibir, dentro do módulo, um ícone para cada nível. Esse ícone deve variar caso o nível já tenha sido concluído, esteja disponível mas não concluído, ou esteja bloqueado. |
+| RF07 | O sistema deve exibir, em cada nível, uma quantidade de perguntas com estilos variados, para estimular o aprendizado do usuário. |
+| RF08 | O sistema deve aprovar o usuário que tenha obtido uma porcentagem de acertos maior ou igual a 90%. |
+| RF09 | O sistema deve reprovar o usuário que tenha obtido uma porcentagem de acertos menor que 90%, mas permitir que ele refaça o nível até atingir a pontuação mínima. |
+| RF10 | O sistema deve exibir, a cada tentativa do usuário de passar do nível, perguntas aleatórias puxadas do banco de dados. |
+| RF11 | O sistema deve exibir, na tela de conclusão de um nível, o tempo levado para concluir, a porcentagem de acertos e a quantidade de moedas ganhas. Caso o usuário seja reprovado, a quantidade de moedas ganhas não é exibida. |
+| RF12 | O sistema deve desabilitar o botão “Verificar” dentro dos níveis até que uma resposta seja selecionada. |
+| RF13 | O sistema deve informar ao usuário qual foi o erro e indicar a resposta correta, caso ele selecione uma opção incorreta. |
+
+**Requisitos Não Funcionais**
+| ID | Descrição|
+| -- | --|
+| RNF01 | O sistema deve suportar múltiplos usuários logados simultaneamente sem perda de desempenho.|
+| RNF02 | O tempo de carregamento de qualquer módulo ou nível não deve ultrapassar 5 segundos.|
+| RNF03 | O sistema deve armazenar os dados dos usuários e progresso de forma segura, garantindo confidencialidade e integridade. |
+| RNF04 | O sistema deve ter interface intuitiva e acessível, considerando princípios de acessibilidade digital (como cores, contraste e navegação via teclado). |
+| RNF05 | O sistema deve apresentar mensagens de erro claras e compreensíveis, orientando o usuário sobre como resolver problemas. |
+| RNF06 | O sistema deve ser compatível com os navegadores mais usados (Chrome, Edge, Firefox, Safari). |
+| RNF07 | O sistema deve registrar logs de atividades importantes, como login, tentativas de conclusão de níveis e alterações no perfil do usuário. |
+
+
+
+# Prototipo
+**Tela de login**
+<img width="2400" height="1884" alt="image" src="https://github.com/user-attachments/assets/450870a7-4b90-4cff-bfaf-330fc27ddf6b" />
+
+**Home**
+<img width="2400" height="1884" alt="image" src="https://github.com/user-attachments/assets/03b57fc3-264a-486d-8317-47afc11df7e0" />
+
+**Tela dentro de um módulo**
+<img width="2400" height="2150" alt="image" src="https://github.com/user-attachments/assets/8b705e35-8aed-40de-a817-aa37de1de10e" />
+
+**Nível - símbolo para palavra**
+| Sem selecionar | Com opção selecionada |
+|--|--|
+| <img width="2400" height="1966" alt="image" src="https://github.com/user-attachments/assets/6f420d4c-e72a-4a0a-ad70-853ea19647d5" /> | <img width="2400" height="1966" alt="image" src="https://github.com/user-attachments/assets/2feb84d1-7a8c-44a0-8ac9-db0bd97f6d04" /> |
+
+**Nível - palavra para símbolo**
+<img width="2400" height="2032" alt="image" src="https://github.com/user-attachments/assets/f84e4034-4788-4aeb-9526-2b2f069fbd00" />
+
+**Nível - frase para símbolo**
+<img width="2400" height="2032" alt="image" src="https://github.com/user-attachments/assets/63e439fb-4d80-42ad-9b7f-865b963bc0af" />
+
+**Nível - combinando pares**
+<img width="2400" height="2124" alt="image" src="https://github.com/user-attachments/assets/beeaa3ad-b33e-40a3-aacd-f53bc514313d" />
+
+**Conclusão - Sucesso**
+<img width="2400" height="1808" alt="image" src="https://github.com/user-attachments/assets/14cd87aa-b87d-4b32-a4b5-06ede66df175" />
+
+
+**Conclusão - Falha**
+<img width="2400" height="1808" alt="image" src="https://github.com/user-attachments/assets/ad61c3f8-33f3-4537-b4fd-030460c5f940" />
+
 
 
 # Fontes
