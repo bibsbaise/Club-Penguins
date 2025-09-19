@@ -240,28 +240,28 @@ https://gitlab.com/GuiRodrr/club-penguins/-/blob/main/useCaseDiagram.md
 **Requisitos Funcionais:**
 | ID | Descrição |
 |--|--|
-| RF01 | O sistema deve exigir que o usuário esteja autenticado para acessar qualquer funcionalidade. |
-| RF02 | O sistema deve permitir que o usuário entre no sistema usando um e-mail e senha já cadastrados, ou se cadastrando. |
+| RF01 | O sistema deve exigir que o aluno esteja autenticado para acessar qualquer funcionalidade. |
+| RF02 | O sistema deve permitir que o aluno entre no sistema usando um e-mail e senha já cadastrados, ou se cadastrando. |
 | RF03 | O sistema deve exibir, na Home, a lista dos módulos disponíveis. Para cada módulo, exibir seu nome, a quantidade de níveis já realizados e a quantidade total de níveis do módulo. |
-| RF04 | O sistema deve exibir, no header, a quantidade de streaks de dias consecutivos com atividades, o número de vidas disponíveis, total de moedas e um item para acessar o perfil do usuário. |
-| RF05 | O sistema deve permitir que o usuário altere os dados informados no cadastro. |
+| RF04 | O sistema deve exibir, no header, a quantidade de streaks de dias consecutivos com atividades, o número de vidas disponíveis, total de moedas e um item para acessar o perfil do aluno. |
+| RF05 | O sistema deve permitir que o aluno altere os dados informados no cadastro. |
 | RF06 | O sistema deve exibir, dentro do módulo, um ícone para cada nível. Esse ícone deve variar caso o nível já tenha sido concluído, esteja disponível mas não concluído, ou esteja bloqueado. |
-| RF07 | O sistema deve exibir, em cada nível, uma quantidade de perguntas com estilos variados, para estimular o aprendizado do usuário. |
-| RF08 | O sistema deve aprovar o usuário que tenha obtido uma porcentagem de acertos maior ou igual a 90%. |
-| RF09 | O sistema deve reprovar o usuário que tenha obtido uma porcentagem de acertos menor que 90%, mas permitir que ele refaça o nível até atingir a pontuação mínima. |
-| RF10 | O sistema deve exibir, a cada tentativa do usuário de passar do nível, perguntas aleatórias puxadas do banco de dados. |
-| RF11 | O sistema deve exibir, na tela de conclusão de um nível, o tempo levado para concluir, a porcentagem de acertos e a quantidade de moedas ganhas. Caso o usuário seja reprovado, a quantidade de moedas ganhas não é exibida. |
+| RF07 | O sistema deve exibir, em cada nível, uma quantidade de perguntas com estilos variados, para estimular o aprendizado do aluno. |
+| RF08 | O sistema deve aprovar o aluno que tenha obtido uma porcentagem de acertos maior ou igual a 90%. |
+| RF09 | O sistema deve reprovar o aluno que tenha obtido uma porcentagem de acertos menor que 90%, mas permitir que ele refaça o nível até atingir a pontuação mínima. |
+| RF10 | O sistema deve exibir, a cada tentativa do aluno de passar do nível, perguntas aleatórias puxadas do banco de dados. |
+| RF11 | O sistema deve exibir, na tela de conclusão de um nível, o tempo levado para concluir, a porcentagem de acertos e a quantidade de moedas ganhas. Caso o aluno seja reprovado, a quantidade de moedas ganhas não é exibida. |
 | RF12 | O sistema deve desabilitar o botão “Verificar” dentro dos níveis até que uma resposta seja selecionada. |
-| RF13 | O sistema deve informar ao usuário qual foi o erro e indicar a resposta correta, caso ele selecione uma opção incorreta. |
+| RF13 | O sistema deve informar ao aluno qual foi o erro e indicar a resposta correta, caso ele selecione uma opção incorreta. |
 
 **Requisitos Não Funcionais**
 | ID | Descrição|
 | -- | --|
-| RNF01 | O sistema deve suportar múltiplos usuários logados simultaneamente sem perda de desempenho.|
+| RNF01 | O sistema deve suportar múltiplos aluno logados simultaneamente sem perda de desempenho.|
 | RNF02 | O tempo de carregamento de qualquer módulo ou nível não deve ultrapassar 5 segundos.|
-| RNF03 | O sistema deve armazenar os dados dos usuários e progresso de forma segura, garantindo confidencialidade e integridade. |
+| RNF03 | O sistema deve armazenar os dados dos aluno e progresso de forma segura, garantindo confidencialidade e integridade. |
 | RNF04 | O sistema deve ter interface intuitiva e acessível, considerando princípios de acessibilidade digital (como cores, contraste e navegação via teclado). |
-| RNF05 | O sistema deve apresentar mensagens de erro claras e compreensíveis, orientando o usuário sobre como resolver problemas. |
+| RNF05 | O sistema deve apresentar mensagens de erro claras e compreensíveis, orientando o aluno sobre como resolver problemas. |
 | RNF06 | O sistema deve ser compatível com os navegadores mais usados (Chrome, Edge, Firefox, Safari). |
 | RNF07 | O sistema deve registrar logs de atividades importantes, como login, tentativas de conclusão de níveis e alterações no perfil do usuário. |
 
