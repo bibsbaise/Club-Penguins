@@ -45,10 +45,10 @@ https://gitlab.com/GuiRodrr/club-penguins/-/blob/main/useCaseDiagram.md
 | **Identificador** | UC1           |
 |-------------------|----------------|
 | **Nome**          | Editar perfil  |
-| **Atores**        | Cliente        |
-| **Sumário**        | Cliente acessa a página de edição de perfil. Nessa página, o cliente pode customizar o seu perfil, adicionando ícones de suas conquistas e visualizando suas medalhas.       |
-| **Pré-condição**        | O cliente deve estar logado.     |
-| **Pós-condição**        | O perfil é editado conforme a vontade do cliente, e deve exibir tudo o que foi adicionado / modificado.        |
+| **Atores**        | Aluno        |
+| **Sumário**        | Aluno acessa a página de edição de perfil. Nessa página, o aluno pode customizar o seu perfil, adicionando ícones de suas conquistas e visualizando suas medalhas.       |
+| **Pré-condição**        | O aluno deve estar logado.     |
+| **Pós-condição**        | O perfil é editado conforme a vontade do aluno, e deve exibir tudo o que foi adicionado / modificado.        |
 | **Pontos de Inclusão**        |    Realizar Login (UC4)     |
 | **Pontos de Extensão**        |         |
 
@@ -56,25 +56,25 @@ https://gitlab.com/GuiRodrr/club-penguins/-/blob/main/useCaseDiagram.md
 
 |**Ações do Ator** | **Ações do Sistema** |
 |------------------|----------------------|
-|1. Cliente acessa a página de edição de perfil. | |
+|1. Aluno acessa a página de edição de perfil. | |
 |                  |2. Sistema apresenta tela de edição de perfil e exibe as personalizações que podem ser feitas, como exibir ícones de conquistas e visualizar medalhas. |
-|3. Cliente aperta o botão "Adicionar Ícones de Conquistas". | |
-|                  |4. Sistema busca quais Ícones de Conquistas o Cliente já possui, mostra cada um deles numa tela, e permite que ele exiba até 3 deles em seu perfil. |
-|5. Cliente seleciona 3 Ícones de sua escolha para exibir em seu perfil. | |
-|                  |6. Sistema exibe os Ícones escolhidos no perfil do Cliente. |
-|7. Cliente aperta o botão "Visualizar Medalhas. | |
-|                  |8. Sistema busca e exibe uma tela mostrando as medalhas já obtidas pelo Cliente ao longo de seus estudos. Fim do caso de uso. |
+|3. Aluno aperta o botão "Adicionar Ícones de Conquistas". | |
+|                  |4. Sistema busca quais Ícones de Conquistas o Aluno já possui, mostra cada um deles numa tela, e permite que ele exiba até 3 deles em seu perfil. |
+|5. Aluno seleciona 3 Ícones de sua escolha para exibir em seu perfil. | |
+|                  |6. Sistema exibe os Ícones escolhidos no perfil do Aluno. |
+|7. Aluno aperta o botão "Visualizar Medalhas. | |
+|                  |8. Sistema busca e exibe uma tela mostrando as medalhas já obtidas pelo Aluno ao longo de seus estudos. Fim do caso de uso. |
 
 ## Fluxos Alternativos
 
 |**Ações do Ator** | **Ações do Sistema** |
 |------------------|----------------------|
-|5.1.1 Cliente tenta adicionar um ícone que ainda não obteve. | |
+|5.1.1 Aluno tenta adicionar um ícone que ainda não obteve. | |
 |                  |5.1.2. Sistema apresenta uma mensagem dizendo que este ícone ainda não foi obtido, e permite que ele selecione outro. |
 
 |**Ações do Ator** | **Ações do Sistema** |
 |------------------|----------------------|
-|5.2.1 Cliente tenta selecionar mais de três ícones. | |
+|5.2.1 Aluno tenta selecionar mais de três ícones. | |
 |                  |5.2.2. Sistema apresenta uma mensagem dizendo que ele já selecionou 3 ícones e mantém a seleção anterior. |
 
 ## **Especificação de Caso de Uso 2: Cadastrar Usuário**
@@ -129,9 +129,9 @@ https://gitlab.com/GuiRodrr/club-penguins/-/blob/main/useCaseDiagram.md
 | **Identificador** | UC3           |
 |-------------------|----------------|
 | **Nome**          | Iniciar e Completar uma Lição |
-| **Atores**        | Cliente       |
-| **Sumário**        | Cliente acessa a página de módulos. Nessa página, o cliente acessa os módulos disponíveis para serem estudados e pode escolher qual deseja aprender no momento. Ao escolher um módulo, ele deve selecionar a lição em que parou, ou, caso esteja iniciando um módulo, deve selecionar a lição inicial. Após iniciar a lição, ele terá 5 vidas, que serão perdidas a cada erro cometido. Para recarregá-las, o usuário terá que assistir um vídeo. Ao chegar ao exercício final e completá-lo, a lição será finalizada e uma nova lição será desbloqueada. |
-| **Pré-condição**        | O cliente deve estar logado.     |
+| **Atores**        | Aluno       |
+| **Sumário**        | Aluno acessa a página de módulos. Nessa página, o Aluno acessa os módulos disponíveis para serem estudados e pode escolher qual deseja aprender no momento. Ao escolher um módulo, ele deve selecionar a lição em que parou, ou, caso esteja iniciando um módulo, deve selecionar a lição inicial. Após iniciar a lição, ele terá 5 vidas, que serão perdidas a cada erro cometido. Para recarregá-las, o Aluno terá que pagar moedas. Ao chegar ao exercício final e completá-lo, a lição será finalizada e uma nova lição será desbloqueada. |
+| **Pré-condição**        | O Aluno deve estar logado.     |
 | **Pós-condição**        |        |
 | **Pontos de Inclusão**        |   Realizar Login (UC4)  |
 | **Pontos de Extensão**        |         |
@@ -140,37 +140,37 @@ https://gitlab.com/GuiRodrr/club-penguins/-/blob/main/useCaseDiagram.md
 
 |**Ações do Ator** | **Ações do Sistema** |
 |------------------|----------------------|
-|1. Cliente aperta o botão "Ver Módulos". | |
+|1. Aluno aperta o botão "Ver Módulos". | |
 |                  |2. Sistema apresenta a tela de Módulos. |
-|3. Cliente seleciona o módulo que deseja aprender. | |
-|                  |4. Sistema busca o progresso do Cliente para ver quais lições ele já pode acessar e apresenta o módulo para o Cliente. |
-|5. Cliente seleciona a lição que deseja aprender. | |
+|3. Aluno seleciona o módulo que deseja aprender. | |
+|                  |4. Sistema busca o progresso do Aluno para ver quais lições ele já pode acessar e apresenta o módulo para o Aluno. |
+|5. Aluno seleciona a lição que deseja aprender. | |
 |                  |6. Sistema apresenta a tela da lição, apresentando os exercícios a serem feitos.  |
-|7. Cliente completa a lição sem perder as vidas. | |
-|                  |8. Sistema registra o progresso do Cliente e desbloqueia novas lições. Fim do caso de uso. |
+|7. Aluno completa a lição sem perder as vidas. | |
+|                  |8. Sistema registra o progresso do Aluno e desbloqueia novas lições. Fim do caso de uso. |
 
 ## Fluxos Alternativos
 
 | **Ações do Ator** | **Ações do Sistema** |
 |------------------|----------------------|
-|7.1.1 Cliente perde as vidas disponíveis. | |
-| | 7.1.2 Sistema pergunta se o Cliente deseja pagar moedas para recarregar as vidas. |
-|7.1.3 Cliente paga moedas. | |
-| | 7.1.4 Sistema recarrega as vidas do Cliente. |
-| 7.1.5 Cliente conclui a lição. | |
+|7.1.1 Aluno perde as vidas disponíveis. | |
+| | 7.1.2 Sistema pergunta se o Aluno deseja pagar moedas para recarregar as vidas. |
+|7.1.3 Aluno paga moedas. | |
+| | 7.1.4 Sistema recarrega as vidas do Aluno. |
+| 7.1.5 Aluno conclui a lição. | |
 
 | **Ações do Ator** | **Ações do Sistema** |
 |------------------|----------------------|
-|7.1.1 Cliente perde as vidas disponíveis. | |
-| | 7.1.2 Sistema pergunta se o Cliente deseja pagar moedas para recarregar as vidas. |
-|7.1.3 Cliente opta por não pagar moedas. | |
-| | 7.1.4 Sistema informa que o Cliente deverá esperar por alguns minutos para que suas vidas sejam recarregadas e faz com que ele retorne para a Página de Módulos. |
+|7.1.1 Aluno perde as vidas disponíveis. | |
+| | 7.1.2 Sistema pergunta se o Aluno deseja pagar moedas para recarregar as vidas. |
+|7.1.3 Aluno opta por não pagar moedas. | |
+| | 7.1.4 Sistema informa que o Aluno deverá esperar por alguns minutos para que suas vidas sejam recarregadas e faz com que ele retorne para a Página de Módulos. |
 
 | **Ações do Ator** | **Ações do Sistema** |
 |------------------|----------------------|
-|7.1.1 Cliente sai da lição antes de completá-la. | |
-| | 7.1.2 Sistema pergunta se o Cliente deseja realmente sair. |
-|7.1.3 Cliente afirma e volta para a Página de Módulos. | |
+|7.1.1 Aluno sai da lição antes de completá-la. | |
+| | 7.1.2 Sistema pergunta se o Aluno deseja realmente sair. |
+|7.1.3 Aluno confirma e volta para a Página de Módulos. | |
 
 ## **Especificação do Caso de Uso 4: Realizar Login**
 
