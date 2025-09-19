@@ -161,16 +161,16 @@ https://gitlab.com/GuiRodrr/club-penguins/-/blob/main/useCaseDiagram.md
 
 | **Ações do Ator** | **Ações do Sistema** |
 |------------------|----------------------|
-|7.1.1 Aluno perde as vidas disponíveis. | |
-| | 7.1.2 Sistema pergunta se o Aluno deseja pagar moedas para recarregar as vidas. |
-|7.1.3 Aluno opta por não pagar moedas. | |
-| | 7.1.4 Sistema informa que o Aluno deverá esperar por alguns minutos para que suas vidas sejam recarregadas e faz com que ele retorne para a Página de Módulos. |
+|7.2.1 Aluno perde as vidas disponíveis. | |
+| | 7.2.2 Sistema pergunta se o Aluno deseja pagar moedas para recarregar as vidas. |
+|7.2.3 Aluno opta por não pagar moedas. | |
+| | 7.2.4 Sistema informa que o Aluno deverá esperar por alguns minutos para que suas vidas sejam recarregadas e faz com que ele retorne para a Página de Módulos. |
 
 | **Ações do Ator** | **Ações do Sistema** |
 |------------------|----------------------|
-|7.1.1 Aluno sai da lição antes de completá-la. | |
-| | 7.1.2 Sistema pergunta se o Aluno deseja realmente sair. |
-|7.1.3 Aluno confirma e volta para a Página de Módulos. | |
+|7.3.1 Aluno sai da lição antes de completá-la. | |
+| | 7.3.2 Sistema pergunta se o Aluno deseja realmente sair. |
+|7.3.3 Aluno confirma e volta para a Página de Módulos. | |
 
 ## **Especificação do Caso de Uso 4: Realizar Login**
 
@@ -216,7 +216,8 @@ https://gitlab.com/GuiRodrr/club-penguins/-/blob/main/useCaseDiagram.md
 
 ## **UC1 - Editar Perfil**
 
-<img width="651" height="871" alt="image" src="https://github.com/user-attachments/assets/ad58b92f-ded8-4812-b993-02f184ba74cf" />
+<img width="651" height="871" alt="image" src="https://github.com/user-attachments/assets/ed5a359f-5116-4f5b-972c-75f20e6ba440" />
+
 
 ## **UC2 - Cadastrar usuário**
 
@@ -224,7 +225,7 @@ https://gitlab.com/GuiRodrr/club-penguins/-/blob/main/useCaseDiagram.md
 
 ## **UC3 - Iniciar e Completar uma Lição**
 
-<img width="978" height="1544" alt="image" src="https://github.com/user-attachments/assets/61635342-8fed-447f-8b1b-a30766c20952" />
+<img width="978" height="1544" alt="image" src="https://github.com/user-attachments/assets/f9e804d1-c47d-4868-972e-08d63a73960f" />
 
 ## **UC4 - Realizar Login**
 
