@@ -1,3 +1,4 @@
+
 // Classe preliminar da classe Perfil, de acordo com o diagrama de classe de domínio
 public class Perfil {
     
@@ -6,20 +7,23 @@ public class Perfil {
         String mOutAnalise;
               
         if (qtdVidas == 0){
-            mtOutAnalise = "Ops, pinguim! Parece que suas vidas acabaram! Use suas moedas para comprar mais vidas!";
+            mtOutAnalise = "ZERO";
         }
         else if (qtdVidas == 1){
-            mtOutAnalise = "Cuidado! Suas vidas estão acabando, pinguim! Tenha mais certeza nas próximas licoes, senão prepare o bolso!";
+            mtOutAnalise = "CUIDADO";
+        }
+        else if (qtdVidas > 1){
+            mtOutAnalise = "OK";
         }
         else{
-            mtOutAnalise = "Pode ficar sereno e tranquilo, pinguim! Continue aprendendo e pinguinando.";
+            mtOutAnalise = "ERRO";
         }
 
         return mtOutAnalise;
         
     }
 
-    public String analisarMoedas(int moedas){ // Analisar quantidade de moedas do usuário
+    public String analisarMoedas(int moedas){
         
         String mOutAnalise;
               
