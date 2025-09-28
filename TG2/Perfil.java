@@ -12,7 +12,7 @@ public class Perfil {
             mtOutClassificacao = "Cuidado! Suas vidas estão acabando, pinguim! Tenha mais certeza nas próximas licoes, senão prepare o bolso!";
         }
         else{
-            mtOutClassificacao = "Pode ficar sereno e tranquilo, pinguim! Continue aprendendo.";
+            mtOutClassificacao = "Pode ficar sereno e tranquilo, pinguim! Continue aprendendo e pinguinando.";
         }
 
         return mtOutClassificacao;
