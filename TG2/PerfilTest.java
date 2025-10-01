@@ -52,6 +52,7 @@ public class PerfilTest {
         assertEquals("ERRO", objPerfil.analisarMoedas(-19174));
     }
 
+    @Test
     public void testAnalisarMoedasComMoedas() {
         System.out.println("Teste da classe Perfil (analisar moedas) Com moedas");
         assertEquals("COM MOEDAS", objPerfil.analisarMoedas(2));
@@ -59,7 +60,8 @@ public class PerfilTest {
         assertEquals("COM MOEDAS", objPerfil.analisarMoedas(565));
         assertEquals("COM MOEDAS", objPerfil.analisarMoedas(13));
     }
-
+    
+    @Test
     public void testAnalisarMoedasSemMoedas() {
         System.out.println("Teste da classe Perfil (analisar moedas) Sem moedas");
         assertEquals("SEM MOEDAS", objPerfil.analisarMoedas(0));
