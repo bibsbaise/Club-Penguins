@@ -1,4 +1,4 @@
-// Adicionando comentario para testar Jenkins Teste2 Teste 3 Teste4 Teste 6
+// Adicionando comentario para testar Jenkins Teste2 Teste 3 Teste4 Teste 7
 // Classe preliminar da classe Perfil, de acordo com o diagrama de classe de domínio
 public class Perfil {
     
