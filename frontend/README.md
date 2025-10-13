@@ -13,3 +13,26 @@ Caso apresente erro, abra o terminal e rode os seguintes comandos:
 
 `$env:Path = [Environment]::GetEnvironmentVariable("Path","User")`
 
+# 2. Criar novo Routing Module
+
+Entrar no diretório correto:
+cd frontend/app/src
+
+Rodar o comando para criar o diretório com routing module:
+
+ng g novo-diretorio --routing
+
+# 3.Criar novo componente
+Entrar no diretório correto:
+
+cd frontend/app/scr/novo-diretorio
+
+Obs: Neste diretório precisa ter o routing module
+
+Rodar o comando:
+
+ng g c menu-novo-diretorio
+
+# 4.Rodar o frontend
+
+ng serve --open
