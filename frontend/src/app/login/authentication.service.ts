@@ -1,61 +1,61 @@
-// import { HttpClient } from '@angular/common/http';
-// import { Injectable } from '@angular/core';
-// import { take } from 'rxjs/operators';
-// import { environment } from '../../environments/environment';
+import { HttpClient } from '@angular/common/http';
+import { Injectable } from '@angular/core';
+import { take } from 'rxjs/operators';
+import { environment } from '../../environments/environment';
 
-// @Injectable({
-//   providedIn: 'root'
-// })
+@Injectable({
+  providedIn: 'root'
+})
 
-// export class AuthenticationService {
+export class AuthenticationService {
 
-//   url: string = environment.apiAuth + 'login/auth/rede/corp/';
-//   urlLogin: string = environment.apiAuth + 'login/';
+  url: string = environment.apiAuth + 'login/auth/rede/corp/';
+  urlLogin: string = environment.apiAuth + 'login/';
 
-//   constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) { }
 
-//   login(email: string | undefined | null,
-//     password: string | undefined | null ,
-//     papel: string | undefined | null) {
+  login(email: string | undefined | null,
+    password: string | undefined | null ,
+    papel: string | undefined | null) {
 
-//     return this.http.post(this.url, {
-//       "email": email,
-//       "password": password,
-//       "role": papel
-//     }).pipe(
-//       take(1)
-//     );
+    return this.http.post(this.url, {
+      "email": email,
+      "password": password,
+      "role": papel
+    }).pipe(
+      take(1)
+    );
 
-//   }
+  }
 
-//   loginRedeCorp(email: string | undefined | null,
-//     password: string | undefined | null ,
-//     papel: string | undefined | null) {
+  loginRedeCorp(email: string | undefined | null,
+    password: string | undefined | null ,
+    papel: string | undefined | null) {
 
-//     return this.http.post(this.urlLogin, {
-//       "email": email,
-//       "password": password,
-//       "role": papel
-//     }).pipe(
-//       take(1)
-//     );
+    return this.http.post(this.urlLogin, {
+      "email": email,
+      "password": password,
+      "role": papel
+    }).pipe(
+      take(1)
+    );
 
-//   }
+  }
 
-//   getToken() {
-//     return localStorage.getItem('token');
-//   }
+  getToken() {
+    return localStorage.getItem('token');
+  }
 
-//   getRole() {
-//     return localStorage.getItem('role');
-//   }
+  getRole() {
+    return localStorage.getItem('role');
+  }
 
-//   logOut() {
+  logOut() {
 
-//     localStorage.removeItem('token');
+    localStorage.removeItem('token');
 
-//     localStorage.removeItem('role');
+    localStorage.removeItem('role');
 
-//     localStorage.removeItem('id');
-//   }
-// }
+    localStorage.removeItem('id');
+  }
+}
