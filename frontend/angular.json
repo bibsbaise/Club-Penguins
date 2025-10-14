@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "app": {
+    "frontend": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -58,10 +58,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "app:build:production"
+              "buildTarget": "frontend:build:production"
             },
             "development": {
-              "buildTarget": "app:build:development"
+              "buildTarget": "frontend:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -88,6 +88,6 @@
     }
   },
   "cli": {
-    "analytics": "7cb3ca7b-3586-482e-b778-1e241cb4e071"
+    "analytics": "ad48a710-d71d-473d-8f50-6f3acdb6d216"
   }
 }

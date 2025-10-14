@@ -1,0 +1,58 @@
+#login .login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+#login .login form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#login .image-icon  {
+  margin-top: 40px;
+  margin-bottom: 0px;
+}
+
+#login .image-icon img {
+  height: 40%;
+  width: 440px;
+}
+
+#login .login .titulo {
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+
+#login .login h2 {
+  font-size: 1.2rem;
+  color: #75029c;
+  margin-bottom: 25px;
+  font-weight: bolder;
+}
+
+#login button {
+  font-size: 1.2rem;
+  color: white;
+  background-color: #75029c;
+  margin-bottom: 10px;
+}
+
+#login button:disabled {
+  background-color: white;
+}
+
+#login .erro {
+  margin-bottom: 20px;
+}
+
+#login .erro mat-card {
+  color: red;
+  font-size: 1.2rem;
+  font-weight: bold;
+  background-color: rgb(243, 180, 180);
+  padding: 20px;
+}
