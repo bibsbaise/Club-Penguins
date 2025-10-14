@@ -22,7 +22,7 @@ Entrar no diretório correto:
 
 Rodar o comando para criar o diretório com routing module:
 
-`ng g novo-diretorio --routing`
+`ng g m novo-diretorio --routing`
 
 
 # 3.Criar novo componente
