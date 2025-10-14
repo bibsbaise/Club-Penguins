@@ -12,7 +12,7 @@ import { Router } from '@angular/router';
 export class LoginComponent {
 
   constructor(
-    // private fb: FormBuilder,
+    private fb: FormBuilder,
     private router: Router,
     // private auth: AuthenticationService,
     // private encryptService: EncryptService
@@ -20,11 +20,10 @@ export class LoginComponent {
 
   public errorAuth: boolean = false;
 
-  // loginForm = this.fb.group({
-  //   email: ['', [Validators.required, Validators.email]],
-  //   password: ['', Validators.required],
-  //   papel: ['', Validators.required]
-  // });
+  loginForm = this.fb.group({
+    email: ['', [Validators.required, Validators.email]],
+    password: ['', Validators.required],
+  });
 
   // getError() {
   //   return this.errorAuth;
@@ -40,7 +39,6 @@ export class LoginComponent {
 //       this.auth.loginRedeCorp(
 //         this.loginForm.get('email')?.value,
 //         this.loginForm.get('password')?.value,
-//         this.loginForm.get('papel')?.value
 //       ).subscribe({
 
 //         error: (err) => {
@@ -58,18 +56,6 @@ export class LoginComponent {
 //             localStorage.setItem('role', res.role);
 //             localStorage.setItem('user', user);
 //             // localStorage.setItem('pwd', pwd);
-
-//             // redireciona para uma determinada tela (consultor ou gestor)
-//             if (this.loginForm.get('papel')?.value == "consultor") {
-
-//               this.router.navigate(['/consultor']);
-
-//             } else if (this.loginForm.get('papel')?.value == "admin") {
-
-//               this.router.navigate(['/admin']);
-
-//             }
-
 //           }
 //         }
 //       });
@@ -87,7 +73,6 @@ export class LoginComponent {
 //         this.auth.login(
 //           reEnc,
 //           senhaEnc,
-//           this.loginForm.get('papel')?.value
 //         ).subscribe({
 //           error: (err) => {
 //             this.errorAuth = true
@@ -98,18 +83,7 @@ export class LoginComponent {
 //               localStorage.setItem('id', res.id);
 //               localStorage.setItem('role', res.role);
 //               localStorage.setItem('user', user);
-//               // localStorage.setItem('pwd', pwd);
-
-//               // redireciona para uma determinada tela (consultor ou gestor)
-//               if (this.loginForm.get('papel')?.value == "consultor") {
-
-//                 this.router.navigate(['/consultor']);
-
-//               } else if (this.loginForm.get('papel')?.value == "admin") {
-
-//                 this.router.navigate(['/admin']);
-
-//               }
+//               // localStorage.setItem('pwd', pwd);//               
 //           }
 //         });
 //       }
