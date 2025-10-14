@@ -69,10 +69,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "reserva:build:production"
+              "buildTarget": "reserva:build:production"
             },
             "development": {
-              "browserTarget": "reserva:build:development"
+              "buildTarget": "reserva:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -80,7 +80,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "reserva:build"
+            "buildTarget": "reserva:build"
           }
         },
         "test": {
