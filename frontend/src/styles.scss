@@ -1,12 +1,12 @@
 // ------------------ TEXT BOX ------------------
 // Altera a cor da borda das caixas de texto
 .mat-mdc-form-field-infix--outlined,  .mdc-notched-outline__leading,  .mdc-notched-outline__notch,  .mdc-notched-outline__trailing{
-    border-color: #23029c !important;
+    border-color: #004AAD !important;
 }
 
 // Altera a cor das labels
 mat-label{
-    color: #23029c !important;
+    color: #706D6D !important;
 }
 
 // Altera a cor do texto da caixa de texto
@@ -23,7 +23,7 @@ input.mat-input-element,  .mat-form-field,  .mat-focused,  .mat-form-field-label
 // ------------------ SELECT BOX ------------------
 // Altera a cor da seta dos campos de seleção
 .mat-mdc-select-arrow {
-    color: #23029c !important;
+    color: #004AAD !important;
 }
 
 // Altera a cor do texto quando selecionada a opção
@@ -58,39 +58,39 @@ input.mat-input-element,  .mat-form-field,  .mat-focused,  .mat-form-field-label
 // ------------------ CHECK BOX ------------------
 // Altera a cor da check box
 .mat-mdc-checkbox .mdc-form-field {
-    color: #23029c !important;
+    color: #004AAD !important;
 }
 
 // Altera a cor da borda das check box
 .mdc-checkbox__background {
-    border-color: #23029c !important;
+    border-color: #004AAD !important;
   }
   
 // Altera a cor ao redor das check box
 .mat-mdc-checkbox.mat-accent .mdc-checkbox--selected~.mdc-checkbox__ripple{
-    background-color: #23029c !important;
+    background-color: #004AAD !important;
 }
   
 // Altera a cor das check box quando estiverem selecionadas
 .mat-mdc-checkbox .mdc-checkbox .mdc-checkbox__native-control:enabled:checked~.mdc-checkbox__background, .mat-mdc-checkbox .mdc-checkbox .mdc-checkbox__native-control:enabled:indeterminate~.mdc-checkbox__background, .mat-mdc-checkbox .mdc-checkbox .mdc-checkbox__native-control[data-indeterminate=true]:enabled~.mdc-checkbox__background{
-    border-color: #23029c !important;
-    background-color: #23029c !important;
+    border-color: #004AAD !important;
+    background-color: #004AAD !important;
 }
 
 
 // ------------------ SLIDE-TOGGLE ------------------
 .mat-mdc-slide-toggle.mat-primary {
-    --mdc-switch-selected-focus-state-layer-color: #23029c;
-    --mdc-switch-selected-handle-color: #23029c;
-    --mdc-switch-selected-hover-state-layer-color: #23029c;
-    --mdc-switch-selected-pressed-state-layer-color: #23029c;
-    --mdc-switch-selected-focus-handle-color: #23029cde;
-    --mdc-switch-selected-hover-handle-color: #23029cde;
-    --mdc-switch-selected-pressed-handle-color: #23029cde;
-    --mdc-switch-selected-focus-track-color: #23029cb8;
-    --mdc-switch-selected-hover-track-color: #23029cb8;
-    --mdc-switch-selected-pressed-track-color: #23029cb8;
-    --mdc-switch-selected-track-color: #23029cb8;
+    --mdc-switch-selected-focus-state-layer-color: #004AAD;
+    --mdc-switch-selected-handle-color: #004AAD;
+    --mdc-switch-selected-hover-state-layer-color: #004AAD;
+    --mdc-switch-selected-pressed-state-layer-color: #004AAD;
+    --mdc-switch-selected-focus-handle-color: #004AAD;
+    --mdc-switch-selected-hover-handle-color: #004AAD;
+    --mdc-switch-selected-pressed-handle-color: #004AAD;
+    --mdc-switch-selected-focus-track-color: #004AAD;
+    --mdc-switch-selected-hover-track-color: #004AAD;
+    --mdc-switch-selected-pressed-track-color: #004AAD;
+    --mdc-switch-selected-track-color: #004AAD;
 }
 
 // ------------------ MAT-PAGINATOR ------------------
@@ -102,7 +102,7 @@ input.mat-input-element,  .mat-form-field,  .mat-focused,  .mat-form-field-label
 // ------------------ SPINNER ------------------
 // Altera a cor do spinner
 mat-progress-spinner circle {
-    stroke: #23029c;
+    stroke: #004AAD;
 }
 
 // ------------------ MAT-SORT ARROW ------------------
