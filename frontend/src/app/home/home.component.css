@@ -1,0 +1,39 @@
+#home header {
+  background-color: #004AAD;
+  font-family: 'Lato', sans-serif;
+  height: 15%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 32px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#home header .logo .logo-icon {
+    height: 115px;
+}
+
+#home header .streak .streak-icon,
+#home header .coins .coins-icon,
+#home header .lifes .lifes-icon {
+    height: 55px;
+}
+
+#home header .profile .profile-icon{
+    height: 65px;
+}
+
+#home header .streak,
+#home header .coins,
+#home header .lifes{
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 550;
+    font-family: 'Lato', sans-serif;
+    align-items: center;
+}
