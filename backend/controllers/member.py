@@ -22,6 +22,18 @@ def create_member():
     except Exception as err:
         raise
 
+# Verifica login
+@member_bp.route('/login/auth', methods=['POST'])
+def login_member():
+    try:
+        dados = request.json
+        if(Member.verify_email_password(dados['email'],member['password'])):
+            return {"msg": "Login correto"}, 200
+        else:
+            return {"msg": "Login ou senha incorretos"}, 400
+    except Exception as err:
+        raise
+
 @member_bp.route('/<id>', methods=['GET'])
 def get_member_by_id(id):
     try:

@@ -25,6 +25,14 @@ class Member(Document):
             if decrypt(member.email) == email:
                 return True
         return False
+
+    @staticmethod
+    def verify_email_password(email, pwd):
+        for member in Member.objects():
+            if decrypt(member.email) == email:
+                if bcrypt.compare(member.password, pwd):
+                    return True
+        return False
     
     # Infos gerais
     @staticmethod

@@ -9,7 +9,7 @@ load_dotenv()
 app = Flask(__name__)
 CORS(app, resources={r"/*":{"origins":"*"}})
 
-models.init_app(app)
+# models.__init__(app) # descomentar depois de arrumar o __init__.py
 
 from controllers.member import member_bp
 
