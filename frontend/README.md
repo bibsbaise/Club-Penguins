@@ -12,7 +12,7 @@ Rodar o comando para criar o diretório com routing module:
 # 2. Criar novo componente
 Entrar no diretório correto:
 
-`cd frontend/app/scr/novo-diretorio`
+`cd frontend/scr/app/novo-diretorio`
 
 Obs: Neste diretório precisa ter o routing module
 
