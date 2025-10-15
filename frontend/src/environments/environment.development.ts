@@ -1,4 +1,4 @@
 export const environment = {
   production: false,
-  apiAuth: 'http://localhost:5000/',
+  apiMember: 'http://localhost:5000/member/',
 };

@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
-// import { AuthenticationService } from './authentication.service';
+import { AuthenticationService } from './authentication.service';
 // import { EncryptService } from '../_helpers/encrypt.service';
 
 @Component({
@@ -14,7 +14,7 @@ export class LoginComponent {
   constructor(
     private fb: FormBuilder,
     private router: Router,
-    // private auth: AuthenticationService,
+    private auth: AuthenticationService,
     // private encryptService: EncryptService
   ) {}
 
@@ -25,79 +25,40 @@ export class LoginComponent {
     password: ['', Validators.required],
   });
 
-  // getError() {
-  //   return this.errorAuth;
-  // }
+  getError() {
+    return this.errorAuth;
+  }
 
-//   submitLogin() {
+  submitLogin() {
+    this.errorAuth = false;
 
-//     // try to authentication again
-//     this.errorAuth = false;
+    this.auth.login(
+      this.loginForm.get('email')?.value,
+      this.loginForm.get('password')?.value,
+    ).subscribe({
 
-//     if (this.loginForm.get('email')?.value == 'root@telefonica.com') {
+      error: (err) => {
+        this.errorAuth = true
+      },
+      next: (res: any) => {
+        const user = this.loginForm.get('email')?.value;
+        const pwd = this.loginForm.get('password')?.value
 
-//       this.auth.loginRedeCorp(
-//         this.loginForm.get('email')?.value,
-//         this.loginForm.get('password')?.value,
-//       ).subscribe({
+        if(user && pwd) {
 
-//         error: (err) => {
-//           this.errorAuth = true
-//         },
-//         next: (res: any) => {
+          localStorage.setItem('token', res.token);
+          localStorage.setItem('id', res.id);
+          localStorage.setItem('user', user);
+        }
+      }
+    });
+  }
 
-//           const user = this.loginForm.get('email')?.value;
-//           const pwd = this.loginForm.get('password')?.value
-
-//           if(user && pwd) {
-
-//             localStorage.setItem('token', res.token);
-//             localStorage.setItem('id', res.id);
-//             localStorage.setItem('role', res.role);
-//             localStorage.setItem('user', user);
-//             // localStorage.setItem('pwd', pwd);
-//           }
-//         }
-//       });
-
-//     } else {
-
-//       const user = this.loginForm.get('email')?.value;
-//       const pwd = this.loginForm.get('password')?.value
-
-//       if(user && pwd) {
-
-//         const reEnc = this.encryptService.encrypt(user);
-//         const senhaEnc = this.encryptService.encrypt(pwd);
-
-//         this.auth.login(
-//           reEnc,
-//           senhaEnc,
-//         ).subscribe({
-//           error: (err) => {
-//             this.errorAuth = true
-//           },
-//           next: (res: any) => {
-
-//               localStorage.setItem('token', res.token);
-//               localStorage.setItem('id', res.id);
-//               localStorage.setItem('role', res.role);
-//               localStorage.setItem('user', user);
-//               // localStorage.setItem('pwd', pwd);//               
-//           }
-//         });
-//       }
-
-//     }
-
-//   }
-
-//   logOut() {
-//     localStorage.removeItem('token');
-//     localStorage.removeItem('role');
-//     localStorage.removeItem('id');
-//     localStorage.removeItem('user');
-//     localStorage.removeItem('pwd');
-//   }
+  logOut() {
+    localStorage.removeItem('token');
+    localStorage.removeItem('id');
+    localStorage.removeItem('user');
+    localStorage.removeItem('pwd');
+  }
 
 }

@@ -9,53 +9,25 @@ import { environment } from '../../environments/environment';
 
 export class AuthenticationService {
 
-  url: string = environment.apiAuth + 'login/auth/rede/corp/';
-  urlLogin: string = environment.apiAuth + 'login/';
+  url: string = environment.apiMember + 'login/auth';
 
   constructor(private http: HttpClient) { }
 
   login(email: string | undefined | null,
-    password: string | undefined | null ,
-    papel: string | undefined | null) {
+    password: string | undefined | null) {
 
     return this.http.post(this.url, {
       "email": email,
       "password": password,
-      "role": papel
-    }).pipe(
-      take(1)
-    );
-
-  }
-
-  loginRedeCorp(email: string | undefined | null,
-    password: string | undefined | null ,
-    papel: string | undefined | null) {
-
-    return this.http.post(this.urlLogin, {
-      "email": email,
-      "password": password,
-      "role": papel
-    }).pipe(
-      take(1)
-    );
-
+    }).pipe(take(1));
   }
 
   getToken() {
     return localStorage.getItem('token');
   }
 
-  getRole() {
-    return localStorage.getItem('role');
-  }
-
   logOut() {
-
     localStorage.removeItem('token');
-
-    localStorage.removeItem('role');
-
     localStorage.removeItem('id');
   }
 }

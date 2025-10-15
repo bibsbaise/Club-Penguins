@@ -8,11 +8,11 @@
 
         <h2>TESTE</h2>
 
-        <!-- <div class="erro" [hidden]="!getError()">
+        <div class="erro" [hidden]="!getError()">
             <mat-card>Login ou senha inválidos!</mat-card>
-        </div> -->
+        </div>
 
-        <form [formGroup]="loginForm">
+        <form [formGroup]="loginForm" (ngSubmit)="submitLogin()">
 
             <div class="input-login">
                 <mat-form-field appearance="outline">
@@ -36,13 +36,13 @@
         </form>
 
 
-        <!-- <div class="button-esqueceu">
+        <div class="button-esqueceu">
             <button mat-raised-button type="submit" disabled>Esqueci a senha</button>
         </div>
 
         <div class="button-cadastrar">
             <button mat-raised-button type="submit" routerLink="/criaconta">Crie uma conta</button>
-        </div> -->
+        </div>
 
 
     </div>
