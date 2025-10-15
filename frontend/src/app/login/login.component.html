@@ -10,9 +10,9 @@
 
         <!-- <div class="erro" [hidden]="!getError()">
             <mat-card>Login ou senha inválidos!</mat-card>
-        </div>
+        </div> -->
 
-        <form [formGroup]="loginForm" (ngSubmit)="submitLogin()">
+        <form [formGroup]="loginForm">
 
             <div class="input-login">
                 <mat-form-field appearance="outline">
@@ -25,6 +25,7 @@
                 <mat-form-field appearance="outline">
                     <mat-label>Informe sua senha</mat-label>
                     <input matInput type="password" formControlName="password" required>
+                    <mat-error>Campo obrigatório</mat-error>
                 </mat-form-field>
             </div>
 
@@ -35,14 +36,14 @@
         </form>
 
 
-        <div class="button-esqueceu">
+        <!-- <div class="button-esqueceu">
             <button mat-raised-button type="submit" disabled>Esqueci a senha</button>
         </div>
 
         <div class="button-cadastrar">
             <button mat-raised-button type="submit" routerLink="/criaconta">Crie uma conta</button>
-        </div>
- -->
+        </div> -->
+
 
     </div>
 
