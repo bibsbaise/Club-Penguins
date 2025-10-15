@@ -1,0 +1,75 @@
+#sign-in {
+  background-color: #C3D2E4;
+  font-family: 'Lato', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#sign-in .sign-in {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 46px;
+  gap: 24px;
+}
+
+#sign-in .image-icon  {
+  margin-top: 60px;
+  margin-bottom: 24px;
+  align-items: center;
+}
+
+#sign-in .image-icon img {
+  height: 40%;
+}
+
+#sign-in .sign-in p{
+  font-weight: 550;
+  font-size: 1.4rem;
+  margin: 0px;
+}
+
+#sign-in .input-email,
+#sign-in .input-password,
+#sign-in .input-password-check {
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  justify-content: center;
+}
+
+#sign-in .sign-in .input-email mat-form-field,
+#sign-in .sign-in .input-password mat-form-field,
+#sign-in .sign-in .input-password-check mat-form-field {
+  width: 100%;
+  margin: 0px;
+}
+
+#sign-in .sign-in .input-email mat-form-field input,
+#sign-in .sign-in .input-password mat-form-field input,
+#sign-in .sign-in .input-password-check mat-form-field input {
+  width: 100%;
+  margin: 0px;
+  background-color: white;
+  font-weight: bold;
+}
+
+#sign-in .sign-in .input-email input.mat-input-element,
+#sign-in .sign-in .input-password input.mat-input-element,
+#sign-in .sign-in .input-password-check input.mat-input-element {
+  width: 100%;
+  font-weight: bold;
+  font-size: 1rem;
+  margin: 0px;
+}
+
+#sign-in .button-create button {
+  font-size: 1.2rem;
+  color: white; 
+  background-color: #004AAD;
+  padding: 24px 100px;
+  width: 100%; 
+  max-width: 400px; 
+}

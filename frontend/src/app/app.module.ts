@@ -16,12 +16,16 @@ import { JwtInterceptor } from '../_helpers/jwt.interceptor';
 import { CustomHttpInterceptor } from '../_helpers/http.interceptor';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
+import { SignInComponent } from './sign-in/sign-in.component';
+import { HomeComponent } from './home/home.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
+    SignInComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,

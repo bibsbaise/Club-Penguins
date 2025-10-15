@@ -1,0 +1,42 @@
+<section id="sign-in">
+
+    <div class="image-icon">
+        <img src="assets/img-login.png" alt="image">
+    </div>
+
+    <div class="sign-in">
+
+        <p class="sign-in-content">Para realizar o cadastro, preencha os campos abaixo:</p>
+
+        <form [formGroup]="signInForm" (ngSubmit)="submitSignIn()">
+
+            <div class="input-email">
+                <mat-form-field appearance="outline">
+                    <mat-label>E-mail</mat-label>
+                    <input matInput type="email" placeholder="exemplo@email.com" formControlName="email" required>
+                </mat-form-field>
+            </div>
+
+            <div class="input-password">
+                <mat-form-field appearance="outline">
+                    <mat-label>Senha</mat-label>
+                    <input matInput type="password" formControlName="password" required>
+                </mat-form-field>
+            </div>
+
+            <div class="input-password-check">
+                <mat-form-field appearance="outline">
+                    <mat-label>Confirme a senha</mat-label>
+                    <input matInput type="password" formControlName="password" required>
+                </mat-form-field>
+            </div>
+
+            <div class="button-create">
+                <button mat-raised-button type="submit">Criar</button>
+            </div>
+
+        </form>
+
+    </div>
+
+</section>

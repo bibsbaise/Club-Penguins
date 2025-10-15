@@ -1,12 +1,16 @@
 // ------------------ TEXT BOX ------------------
-// Altera a cor da borda das caixas de texto
+// Altera as caixas de texto
 .mat-mdc-form-field-infix--outlined,  .mdc-notched-outline__leading,  .mdc-notched-outline__notch,  .mdc-notched-outline__trailing{
     border-color: #004AAD !important;
+    background-color: white;
 }
 
-// Altera a cor das labels
+// Altera as labels
 mat-label{
     color: #706D6D !important;
+    background-color: white;
+    border-radius: 3px;
+    font-weight: 550;
 }
 
 // Altera a cor do texto da caixa de texto

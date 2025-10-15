@@ -1,7 +1,12 @@
 #login {
   background-color: #C3D2E4;
-  justify-content: center;
+  font-family: 'Lato', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
 #login .login {
   display: flex;
   flex-direction: column;
@@ -18,27 +23,57 @@
 #login .image-icon  {
   margin-top: 60px;
   margin-bottom: 24px;
+  align-items: center;
 }
 
 #login .image-icon img {
   height: 40%;
 }
 
-#login .button-submit {
-  font-size: 1.2rem;
-  color: white;
-  background-color: #004AAD;
-  padding-top: 16px;
-  padding-bottom: 16px;
+#login .input-login,
+#login .input-password {
+  width: 100%;
+  max-width: 400px;
+  display: flex;
   justify-content: center;
 }
 
-#login button:disabled {
+#login .input-login mat-form-field,
+#login .input-password mat-form-field {
+  width: 100%;
+  max-width: 400px;
+}
+
+#login .input-login mat-form-field input,
+#login .input-password mat-form-field input {
+  width: 100%;
+  max-width: 400px;
   background-color: white;
+  font-weight: bold;
+}
+
+#login .input-login input.mat-input-element,
+#login .input-password input.mat-input-element {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+
+#login .button-submit button {
+  font-size: 1.2rem;
+  color: white; 
+  background-color: #004AAD;
+  padding: 24px 100px;
+  width: 100%; 
+  max-width: 400px; 
 }
 
 #login .erro {
   margin-bottom: 20px;
+}
+
+#login .login .input {
+  border-radius: 16px;
 }
 
 #login .erro mat-card {
@@ -47,17 +82,28 @@
   font-weight: bold;
   background-color: rgb(243, 180, 180);
   padding: 20px;
+  font-family: 'Lato', sans-serif;
 }
 
 #login .criar-conta {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
   gap: 10px;
   font-weight: bold;
+  margin-bottom: 20px;
 }
 
 #login .criar-conta .criar-conta-content {
   color:#000000;
+  margin: 0px;
 }
 
 #login .criar-conta .criar-conta-link {
   color: #004AAD;
+}
+
+#login .input-login {
+  color: #706D6D;
+  border-radius: 16px;
 }
