@@ -2,7 +2,7 @@
 
 Entrar no diretório correto:
 
-`cd frontend/app/src`
+`cd frontend/src/app`
 
 Rodar o comando para criar o diretório com routing module:
 
