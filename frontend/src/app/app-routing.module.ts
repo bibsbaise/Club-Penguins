@@ -3,12 +3,14 @@ import { RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
 import { SignInComponent } from './sign-in/sign-in.component';
+import { LevelsComponent } from './levels/levels.component';
 
 const routes: Routes = [
     { path: '', redirectTo: '/login', pathMatch: 'full' },
     { path: 'login', component: LoginComponent },
     { path: 'home', component: HomeComponent },
     { path: 'sign-in', component: SignInComponent },
+    { path: 'niveis/:modulo', component: LevelsComponent },
 ];
 
 @NgModule({

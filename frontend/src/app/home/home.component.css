@@ -37,3 +37,18 @@
     font-family: 'Lato', sans-serif;
     align-items: center;
 }
+
+#home main .modules-row {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px;
+    box-sizing: border-box;
+}
+
+#home main .modules-content {
+    display: flex;
+    flex-direction: column;
+}

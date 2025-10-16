@@ -1,0 +1,9 @@
+<section id="niveis">
+  <h1>{{ modulo | titlecase }}</h1>
+
+  <div class="niveis-container">
+    <div class="nivel" *ngFor="let nivel of [1, 2, 3]">
+      <p>Nível {{ nivel }}</p>
+    </div>
+  </div>
+</section>
