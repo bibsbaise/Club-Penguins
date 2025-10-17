@@ -108,9 +108,21 @@ body {
 }
 
 #home main .module {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
-    cursor: pointer;
     transition: transform 0.2s ease;
+}
+
+#home main .module:hover {
+    transform: scale(1.05);
+}
+
+#home main .module .module-background,
+#home main .module .module-title,
+#home main .module .module-levels {
+    pointer-events: none;
 }

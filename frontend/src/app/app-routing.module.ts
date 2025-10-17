@@ -4,7 +4,7 @@ import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
 import { SignInComponent } from './sign-in/sign-in.component';
 import { LevelsComponent } from './levels/levels.component';
-import { ProfileComponent } from './profile/profile.component';
+import { LevelComponent } from './level/level.component';
 
 const routes: Routes = [
     { path: '', redirectTo: '/login', pathMatch: 'full' },
@@ -12,7 +12,7 @@ const routes: Routes = [
     { path: 'home', component: HomeComponent },
     { path: 'criar-conta', component: SignInComponent },
     { path: 'niveis/:modulo', component: LevelsComponent },
-    { path: 'perfil', component: ProfileComponent }
+    { path: 'pergunta/:id', component: LevelComponent },
 ];
 
 @NgModule({

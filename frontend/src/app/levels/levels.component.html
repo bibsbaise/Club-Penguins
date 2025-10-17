@@ -27,7 +27,9 @@
 
       <p class="module-title">{{ modulo }}</p>
       <div class="cards-container">
-        <div *ngFor="let nivel of niveis" class="card" [ngClass]="nivel.status">
+        <div *ngFor="let nivel of niveis" class="card" [ngClass]="nivel.status"
+          [routerLink]="(nivel.status !== 'bloqueado') ? ['/pergunta', nivel.perguntaId] : null"
+          [class.clickable]="nivel.status !== 'bloqueado'">
           <img [src]="
             nivel.status === 'completo' ? 'assets/complete-level.png' :
             nivel.status === 'atual' ? 'assets/current-level.png' :

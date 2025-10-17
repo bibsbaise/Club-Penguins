@@ -4,36 +4,40 @@ import { ActivatedRoute } from '@angular/router';
 @Component({
   selector: 'app-levels',
   templateUrl: './levels.component.html',
-  styleUrl: './levels.component.css'
+  styleUrls: ['./levels.component.css'] // Corrigi typo: styleUrl → styleUrls
 })
 export class LevelsComponent implements OnInit {
   modulo!: string;
 
   totalNiveis = 10; // você pode depois puxar isso de uma API, se quiser
   nivelAtual = 3;   // esse seria o nível em que o usuário está
-  niveis: { numero: number; status: 'bloqueado' | 'completo' | 'atual' }[] = [];
+  niveis: { 
+    numero: number; 
+    status: 'bloqueado' | 'completo' | 'atual'; 
+    perguntaId: number; // adiciona aqui
+  }[] = [];
 
   constructor(private route: ActivatedRoute) {}
 
   ngOnInit(): void {
-  const rawModulo = this.route.snapshot.paramMap.get('modulo') || '';
+    const rawModulo = this.route.snapshot.paramMap.get('modulo') || '';
 
-  // Mapa de slugs para nomes corretos com acentuação
-  const modulosComAcento: Record<string, string> = {
-    'saudacoes': 'Saudações',
-    'familia': 'Família'
-  };
+    // Mapa de slugs para nomes corretos com acentuação
+    const modulosComAcento: Record<string, string> = {
+      'saudacoes': 'Saudações',
+      'familia': 'Família'
+    };
 
-  // Verifica se o slug está no mapa, senão aplica a transformação padrão
-  if (modulosComAcento[rawModulo]) {
-    this.modulo = modulosComAcento[rawModulo];
-  } else {
-    const moduloComEspacos = rawModulo.replace(/-/g, ' ');
-    this.modulo = moduloComEspacos.charAt(0).toUpperCase() + moduloComEspacos.slice(1);
+    // Verifica se o slug está no mapa, senão aplica a transformação padrão
+    if (modulosComAcento[rawModulo]) {
+      this.modulo = modulosComAcento[rawModulo];
+    } else {
+      const moduloComEspacos = rawModulo.replace(/-/g, ' ');
+      this.modulo = moduloComEspacos.charAt(0).toUpperCase() + moduloComEspacos.slice(1);
+    }
+
+    this.gerarNiveis();
   }
-
-  this.gerarNiveis();
-}
 
   gerarNiveis(): void {
     this.niveis = Array.from({ length: this.totalNiveis }, (_, i) => {
@@ -43,7 +47,7 @@ export class LevelsComponent implements OnInit {
       if (numero < this.nivelAtual) status = 'completo';
       else if (numero === this.nivelAtual) status = 'atual';
 
-      return { numero, status };
+      return { numero, status, perguntaId: numero }; // aqui o id
     });
   }
 }
