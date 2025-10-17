@@ -4,13 +4,15 @@
     <div class="logo">
       <img class="logo-icon" src="assets/logo.png" alt="image">
     </div>
-    <div class="streak">
-      <img class="streak-icon" src="assets/icon-fire.png" alt="image">
-      <p class="quantity">25</p>
-    </div>
-    <div class="lifes">
-      <img class="lifes-icon" src="assets/icon-heart.png" alt="image">
-      <p class="quantity">5</p>
+    <div class="user-status">
+      <div class="streak">
+        <img class="streak-icon" src="assets/icon-fire.png" alt="image">
+        <p class="quantity">25</p>
+      </div>
+      <div class="lifes">
+        <img class="lifes-icon" src="assets/icon-heart.png" alt="image">
+        <p class="quantity">5</p>
+      </div>
     </div>
   </header>
 
@@ -29,8 +31,7 @@
           <img [src]="
             nivel.status === 'completo' ? 'assets/complete-level.png' :
             nivel.status === 'atual' ? 'assets/current-level.png' :
-            'assets/blocked-level.png'" 
-            alt="ícone do nível" class="level-icon">
+            'assets/blocked-level.png'" alt="ícone do nível" class="level-icon">
         </div>
       </div>
 

@@ -16,12 +16,24 @@ export class LevelsComponent implements OnInit {
   constructor(private route: ActivatedRoute) {}
 
   ngOnInit(): void {
-    const rawModulo = this.route.snapshot.paramMap.get('modulo') || '';
+  const rawModulo = this.route.snapshot.paramMap.get('modulo') || '';
+
+  // Mapa de slugs para nomes corretos com acentuação
+  const modulosComAcento: Record<string, string> = {
+    'saudacoes': 'Saudações',
+    'familia': 'Família'
+  };
+
+  // Verifica se o slug está no mapa, senão aplica a transformação padrão
+  if (modulosComAcento[rawModulo]) {
+    this.modulo = modulosComAcento[rawModulo];
+  } else {
     const moduloComEspacos = rawModulo.replace(/-/g, ' ');
     this.modulo = moduloComEspacos.charAt(0).toUpperCase() + moduloComEspacos.slice(1);
-
-    this.gerarNiveis();
   }
+
+  this.gerarNiveis();
+}
 
   gerarNiveis(): void {
     this.niveis = Array.from({ length: this.totalNiveis }, (_, i) => {

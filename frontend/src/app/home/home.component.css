@@ -1,29 +1,36 @@
-html, body {
+html,
+body {
     height: 100%;
-    margin: 0;         
-    padding: 0;         
+    margin: 0;
+    padding: 0;
     background-color: #C3D2E4;
 }
 
 #home {
-    min-height: 100vh;          
-    background-color: #C3D2E4;   
+    min-height: 100vh;
+    background-color: #C3D2E4;
     display: flex;
     flex-direction: column;
     font-family: 'Lato', sans-serif;
 }
 
 #home header {
-  background-color: #004AAD;
-  font-family: 'Lato', sans-serif;
-  height: 15%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding: 32px 180px 32px 32px;
-  width: 100%;
-  box-sizing: border-box;
+    background-color: #004AAD;
+    font-family: 'Lato', sans-serif;
+    height: 15%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px 180px 32px 32px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.user-status {
+    display: flex;
+    flex-direction: row;
+    gap: 160px;
 }
 
 #home header .logo .logo-icon {
@@ -36,13 +43,13 @@ html, body {
     height: 55px;
 }
 
-#home header .profile .profile-icon{
+#home header .profile .profile-icon {
     height: 65px;
 }
 
 #home header .streak,
 #home header .coins,
-#home header .lifes{
+#home header .lifes {
     display: flex;
     flex-direction: row;
     gap: 16px;
@@ -61,7 +68,7 @@ html, body {
     align-items: center;
     padding: 96px;
     padding-bottom: 0px;
-    padding-top:64px;
+    padding-top: 64px;
     box-sizing: border-box;
 }
 
@@ -71,28 +78,28 @@ html, body {
 }
 
 #home main .module-background {
-    background-color: white;      
-    border-radius: 40px;          
-    padding: 16px;                
+    background-color: white;
+    border-radius: 40px;
+    padding: 16px;
     display: flex;
     flex-direction: column;
-    align-items: center;          
+    align-items: center;
     justify-content: center;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 #home main .module img {
     height: 136px;
 }
 
-#home main .module-title{
+#home main .module-title {
     font-size: 1.3rem;
     font-weight: 570;
     margin-bottom: 4px;
     margin-top: 16px;
 }
 
-#home main .module-levels{
+#home main .module-levels {
     color: #2F43B9;
     font-weight: bold;
     font-size: 1.2rem;
@@ -101,9 +108,9 @@ html, body {
 }
 
 #home main .module {
-    align-items: center;        
-    justify-content: center;    
-    text-align: center;        
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     cursor: pointer;
     transition: transform 0.2s ease;
 }
