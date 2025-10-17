@@ -1,9 +1,43 @@
 <section id="niveis">
-  <h1>{{ modulo | titlecase }}</h1>
 
-  <div class="niveis-container">
-    <div class="nivel" *ngFor="let nivel of [1, 2, 3]">
-      <p>Nível {{ nivel }}</p>
+  <header>
+    <div class="logo">
+      <img class="logo-icon" src="assets/logo.png" alt="image">
     </div>
-  </div>
+    <div class="streak">
+      <img class="streak-icon" src="assets/icon-fire.png" alt="image">
+      <p class="quantity">25</p>
+    </div>
+    <div class="lifes">
+      <img class="lifes-icon" src="assets/icon-heart.png" alt="image">
+      <p class="quantity">5</p>
+    </div>
+    <div class="coins">
+      <img class="coins-icon" src="assets/icon-coins.png" alt="image">
+      <p class="quantity">5</p>
+    </div>
+  </header>
+
+  <main>
+
+    <button class="back-button" routerLink="/home">
+      <img src="assets/icon-left-arrow.png" alt="image">
+      <p>Voltar</p>
+    </button>
+
+    <div class="content">
+
+      <p class="module-title">{{ modulo }}</p>
+      <div class="cards-container">
+        <div *ngFor="let nivel of niveis" class="card" [ngClass]="nivel.status">
+          <img [src]="
+            nivel.status === 'completo' ? 'assets/complete-level.png' :
+            nivel.status === 'atual' ? 'assets/current-level.png' :
+            'assets/blocked-level.png'" 
+            alt="ícone do nível" class="level-icon">
+        </div>
+      </div>
+
+    </div>
+  </main>
 </section>

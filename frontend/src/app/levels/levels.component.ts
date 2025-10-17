@@ -9,9 +9,29 @@ import { ActivatedRoute } from '@angular/router';
 export class LevelsComponent implements OnInit {
   modulo!: string;
 
+  totalNiveis = 10; // você pode depois puxar isso de uma API, se quiser
+  nivelAtual = 3;   // esse seria o nível em que o usuário está
+  niveis: { numero: number; status: 'bloqueado' | 'completo' | 'atual' }[] = [];
+
   constructor(private route: ActivatedRoute) {}
 
   ngOnInit(): void {
-    this.modulo = this.route.snapshot.paramMap.get('modulo') || '';
+    const rawModulo = this.route.snapshot.paramMap.get('modulo') || '';
+    const moduloComEspacos = rawModulo.replace(/-/g, ' ');
+    this.modulo = moduloComEspacos.charAt(0).toUpperCase() + moduloComEspacos.slice(1);
+
+    this.gerarNiveis();
+  }
+
+  gerarNiveis(): void {
+    this.niveis = Array.from({ length: this.totalNiveis }, (_, i) => {
+      const numero = i + 1;
+      let status: 'bloqueado' | 'completo' | 'atual' = 'bloqueado';
+
+      if (numero < this.nivelAtual) status = 'completo';
+      else if (numero === this.nivelAtual) status = 'atual';
+
+      return { numero, status };
+    });
   }
 }

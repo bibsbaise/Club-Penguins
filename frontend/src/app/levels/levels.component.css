@@ -1,0 +1,139 @@
+html, body {
+    height: 100%;
+    margin: 0;         
+    padding: 0;         
+    background-color: #C3D2E4;
+}
+
+#niveis {
+    min-height: 100vh;          
+    background-color: #C3D2E4;   
+    display: flex;
+    flex-direction: column;
+    font-family: 'Lato', sans-serif;
+}
+
+#niveis header {
+  background-color: #004AAD;
+  font-family: 'Lato', sans-serif;
+  height: 15%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 32px 180px 32px 32px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#niveis header .logo .logo-icon {
+    height: 115px;
+}
+
+#niveis header .streak .streak-icon,
+#niveis header .coins .coins-icon,
+#niveis header .lifes .lifes-icon {
+    height: 55px;
+}
+
+#niveis header .profile .profile-icon{
+    height: 65px;
+}
+
+#niveis header .streak,
+#niveis header .coins,
+#niveis header .lifes{
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 550;
+    font-family: 'Lato', sans-serif;
+    align-items: center;
+}
+
+#niveis .content {
+    background-color: white;
+    border-radius: 24px;
+    padding: 24px;
+    margin-inline: 56px;
+    margin-block: 0px;
+}
+
+#niveis .back-button {
+    display: flex;
+    flex-direction: row;
+    background-color: transparent;
+    border-color: transparent;
+    gap: 8px;
+    align-items: center;
+    cursor: pointer;
+    margin-inline: 56px;
+    margin-top: 32px;
+    margin-bottom: 24px;
+}
+
+#niveis .back-button img {
+    height: 24px;
+}
+
+#niveis .back-button p {
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+    font-weight: 550;
+}
+
+#niveis .module-title {
+    font-size: 2.5rem;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); /* tamanho mínimo dos cards */
+  gap: 24px;
+  justify-content: center; /* centraliza o grid dentro da content */
+  width: 100%;
+  max-width: 100%;
+}
+
+.card {
+  width: 200px;
+  height: 200px;
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+  border-style: solid;
+  border-width: 2px;
+}
+
+.card.bloqueado {
+  background-color: #E2E4E1;
+  border-color: #6B6B6B;
+}
+
+.card.completo {
+  background-color: #B2FD83;
+  border-color: #3E8E0B;
+}
+
+.card.atual {
+  background-color: #C3D2E4;
+  border-color: #3043B8;
+}
+
+.card img {
+  width: 80%;
+  height: auto;
+  object-fit: contain;
+}
+
+@media (min-width: 1024px) {
+  .cards-container {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}

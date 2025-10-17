@@ -53,10 +53,6 @@ html, body {
     align-items: center;
 }
 
-#home header .profile {
-    cursor: pointer;
-}
-
 #home main .modules-row {
     display: flex;
     flex-direction: row;
