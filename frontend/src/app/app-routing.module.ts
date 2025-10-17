@@ -10,9 +10,9 @@ const routes: Routes = [
     { path: '', redirectTo: '/login', pathMatch: 'full' },
     { path: 'login', component: LoginComponent },
     { path: 'home', component: HomeComponent },
-    { path: 'sign-in', component: SignInComponent },
+    { path: 'criar-conta', component: SignInComponent },
     { path: 'niveis/:modulo', component: LevelsComponent },
-    { path: 'profile', component: ProfileComponent }
+    { path: 'perfil', component: ProfileComponent }
 ];
 
 @NgModule({

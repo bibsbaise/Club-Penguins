@@ -1,3 +1,18 @@
+html, body {
+    height: 100%;
+    margin: 0;         
+    padding: 0;         
+    background-color: #C3D2E4;
+}
+
+#home {
+    min-height: 100vh;          
+    background-color: #C3D2E4;   
+    display: flex;
+    flex-direction: column;
+    font-family: 'Lato', sans-serif;
+}
+
 #home header {
   background-color: #004AAD;
   font-family: 'Lato', sans-serif;
@@ -6,7 +21,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 32px;
+  padding: 32px 180px 32px 32px;
   width: 100%;
   box-sizing: border-box;
 }
@@ -49,12 +64,44 @@
     justify-content: space-between;
     align-items: center;
     padding: 96px;
+    padding-bottom: 0px;
+    padding-top:64px;
     box-sizing: border-box;
 }
 
 #home main .modules-content {
     display: flex;
     flex-direction: column;
+}
+
+#home main .module-background {
+    background-color: white;      
+    border-radius: 40px;          
+    padding: 16px;                
+    display: flex;
+    flex-direction: column;
+    align-items: center;          
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+}
+
+#home main .module img {
+    height: 136px;
+}
+
+#home main .module-title{
+    font-size: 1.3rem;
+    font-weight: 570;
+    margin-bottom: 4px;
+    margin-top: 16px;
+}
+
+#home main .module-levels{
+    color: #2F43B9;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 0px;
+    margin-top: 4px;
 }
 
 #home main .module {

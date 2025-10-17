@@ -15,9 +15,6 @@
             <img class="coins-icon" src="assets/icon-coins.png" alt="image">
             <p class="quantity">5</p>
         </div>
-        <div class="profile" routerLink="/perfil">
-            <img class="profile-icon" src="assets/icon-profile.png" alt="image">
-        </div>
     </header>
 
     <main>
@@ -25,39 +22,58 @@
             <!-- Primeira fileira de módulos -->
             <div class="modules-row">
                 <div class="module" routerLink="/niveis/alfabeto">
-                    <img src="assets/icon-alphabet.png" alt="Alfabeto">
+                    <div class="module-background">
+                        <img src="assets/icon-alphabet.png" alt="Alfabeto">
+                    </div>
                     <p class="module-title">Alfabeto</p>
+                    <p class="module-levels">x/10</p>
                 </div>
 
                 <div class="module" routerLink="/niveis/saudacoes">
-                    <img src="assets/icon-greetings.png" alt="Saudações">
+                    <div class="module-background">
+                        <img src="assets/icon-greetings.png" alt="Saudações">
+                    </div>
                     <p class="module-title">Saudações</p>
+                    <p class="module-levels">x/10</p>
                 </div>
 
                 <div class="module" routerLink="/niveis/tempo">
-                    <img src="assets/icon-clock.png" alt="Tempo">
+                    <div class="module-background">
+                        <img src="assets/icon-clock.png" alt="Tempo">
+                    </div>
                     <p class="module-title">Tempo</p>
-                </div>
-            </div>
-
-            <!-- Segunda fileira de módulos -->
-            <div class="modules-row">
-                <div class="module" routerLink="/niveis/alfabeto">
-                    <img src="assets/icon-pin.png" alt="Lugares">
-                    <p class="module-title">Lugares</p>
-                </div>
-
-                <div class="module" routerLink="/niveis/saudacoes">
-                    <img src="assets/icon-greetings.png" alt="Saudações">
-                    <p class="module-title">Saudações</p>
-                </div>
-
-                <div class="module" routerLink="/niveis/tempo">
-                    <img src="assets/icon-clock.png" alt="Tempo">
-                    <p class="module-title">Tempo</p>
+                    <p class="module-levels">x/10</p>
                 </div>
             </div>
         </div>
+
+        <!-- Segunda fileira de módulos -->
+        <div class="modules-row">
+            <div class="module" routerLink="/niveis/lugares">
+                <div class="module-background">
+                    <img src="assets/icon-pin.png" alt="Lugares">
+                </div>
+                <p class="module-title">Lugares</p>
+                <p class="module-levels">x/10</p>
+            </div>
+
+            <div class="module" routerLink="/niveis/partes-do-corpo">
+                <div class="module-background">
+                    <img src="assets/icon-person.png" alt="Partes do Corpo">
+                </div>
+                <p class="module-title">Partes do corpo</p>
+                <p class="module-levels">x/10</p>
+            </div>
+
+            <div class="module" routerLink="/niveis/familia">
+                <div class="module-background">
+                    <img src="assets/icon-family.png" alt="Família">
+                </div>
+                <p class="module-title">Família</p>
+                <p class="module-levels">x/10</p>
+            </div>
+        </div>
+
     </main>
 
 </section>

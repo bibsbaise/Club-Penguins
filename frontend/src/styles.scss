@@ -1,6 +1,9 @@
 // ------------------ TEXT BOX ------------------
 // Altera as caixas de texto
-.mat-mdc-form-field-infix--outlined,  .mdc-notched-outline__leading,  .mdc-notched-outline__notch,  .mdc-notched-outline__trailing{
+.mat-mdc-form-field-infix--outlined,  
+.mdc-notched-outline__leading,  
+.mdc-notched-outline__notch,  
+.mdc-notched-outline__trailing {
     border-color: #004AAD !important;
     background-color: white;
 }
@@ -11,6 +14,7 @@ mat-label{
     background-color: white;
     border-radius: 3px;
     font-weight: 550;
+    font-size: 1.1rem;
 }
 
 // Altera a cor do texto da caixa de texto
@@ -19,7 +23,10 @@ mat-label{
 }
 
 // Altera a cor do texto quando a caixa está em foco (selecionada)
-input.mat-input-element,  .mat-form-field,  .mat-focused,  .mat-form-field-label {
+input.mat-input-element,  
+.mat-form-field,  
+.mat-focused,  
+.mat-form-field-label {
     color: black !important;
 }
 
