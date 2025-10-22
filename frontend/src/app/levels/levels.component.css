@@ -3,12 +3,12 @@ body {
     height: 100%;
     margin: 0;
     padding: 0;
-    background-color: #C3D2E4;
+    background-color: #d6e9ff;
 }
 
 #niveis {
     min-height: 100vh;
-    background-color: #C3D2E4;
+    background-color: #d6e9ff;
     display: flex;
     flex-direction: column;
     font-family: 'Lato', sans-serif;
@@ -131,7 +131,7 @@ body {
 }
 
 .card.atual {
-    background-color: #C3D2E4;
+    background-color: #d6e9ff;
     border-color: #3043B8;
 }
 

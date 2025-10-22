@@ -5,7 +5,7 @@ html, body {
 }
 
 #login {
-  background-color: #C3D2E4;
+  background-color: #d6e9ff;
   font-family: 'Lato', sans-serif;
   min-height: 100vh;
   display: flex;
@@ -27,16 +27,17 @@ html, body {
 }
 
 #login .image-icon  {
-  margin-top: 60px;
+  margin-top: 24px;
   margin-bottom: 24px;
   align-items: center;
+  height: 320px;
 }
 
 #login .image-icon img {
-  height: 40%;
+  height: 100%;
 }
 
-#login .input-login,
+/* #login .input-login,
 #login .input-password {
   width: 100%;
   max-width: 400px;
@@ -48,9 +49,9 @@ html, body {
 #login .input-password mat-form-field {
   width: 100%;
   max-width: 400px;
-}
+} */
 
-#login .input-login mat-form-field input,
+/* #login .input-login mat-form-field input,
 #login .input-password mat-form-field input {
   width: 100%;
   max-width: 400px;
@@ -63,7 +64,7 @@ html, body {
   font-weight: bold;
   font-size: 1rem;
   color: black !important;
-}
+} */
 
 
 #login .button-submit button {
@@ -81,18 +82,18 @@ html, body {
   margin-bottom: 20px;
 }
 
-#login .login .input {
+/*#login .login .input {
   border-radius: 16px;
-}
+}*/
 
-#login .erro mat-card {
+/*#login .erro mat-card {
   color: black;
   font-size: 1.2rem;
   font-weight: bold;
   background-color: rgb(243, 180, 180);
   padding: 20px;
   font-family: 'Lato', sans-serif;
-}
+}*/
 
 #login .criar-conta {
   display: flex;
@@ -112,7 +113,7 @@ html, body {
   color: #004AAD;
 }
 
-#login .input-login {
+/* #login .input-login {
   color: #706D6D;
   border-radius: 16px;
-}
+} */

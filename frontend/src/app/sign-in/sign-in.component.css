@@ -2,11 +2,11 @@ html, body {
     height: 100%;
     margin: 0;         
     padding: 0;         
-    background-color: #C3D2E4;
+    background-color: #d6e9ff;
 }
 
 #sign-in {
-  background-color: #C3D2E4;
+  background-color: #d6e9ff;
   font-family: 'Lato', sans-serif;
   min-height: 100vh;
   display: flex;
