@@ -22,7 +22,7 @@ export class LoginComponent {
 
   loginForm = this.fb.group({
     email: ['', [Validators.required, Validators.email]],
-    password: ['', Validators.required],
+    password: ['', [Validators.required]],
   });
 
   getError() {
@@ -46,8 +46,8 @@ export class LoginComponent {
 
         if(user && pwd) {
 
-          localStorage.setItem('token', res.token);
-          localStorage.setItem('id', res.id);
+          // localStorage.setItem('token', res.token);
+          // localStorage.setItem('id', res.id);
           localStorage.setItem('user', user);
         }
       }
@@ -55,10 +55,9 @@ export class LoginComponent {
   }
 
   logOut() {
-    localStorage.removeItem('token');
-    localStorage.removeItem('id');
+    // localStorage.removeItem('token');
+    // localStorage.removeItem('id');
     localStorage.removeItem('user');
-    localStorage.removeItem('pwd');
   }
 
 }

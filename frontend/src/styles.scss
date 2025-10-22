@@ -5,21 +5,24 @@
 .mdc-notched-outline__notch,  
 .mdc-notched-outline__trailing {
     border-color: #004AAD !important;
+}
+
+.mat-mdc-text-field-wrapper {
     background-color: white;
 }
 
 // Altera as labels
 mat-label{
     color: #706D6D !important;
-    background-color: white;
+    // background-color: white;
     border-radius: 3px;
     font-weight: 550;
     font-size: 1.1rem;
 }
 
 // Altera a cor do texto da caixa de texto
-.mdc-text-field:not(.mdc-text-field--disabled) .mdc-text-field__input {
-    color: black;
+.mdc-text-field--outlined:not(.mdc-text-field--disabled) .mdc-text-field__input {
+    color: black !important;
 }
 
 // Altera a cor do texto quando a caixa está em foco (selecionada)

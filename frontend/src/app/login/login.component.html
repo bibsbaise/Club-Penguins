@@ -12,7 +12,7 @@
 
         <form [formGroup]="loginForm" (ngSubmit)="submitLogin()">
 
-            <div class="input-login">
+            <div class="text-field">
                 <mat-form-field appearance="outline">
                     <mat-label>E-mail</mat-label>
                     <input matInput type="email" placeholder="exemplo@email.com" formControlName="email" required>
@@ -20,7 +20,7 @@
                 </mat-form-field>
             </div>
 
-            <div class="input-password">
+            <div class="text-field">
                 <mat-form-field appearance="outline">
                     <mat-label>Senha</mat-label>
                     <input matInput type="password" formControlName="password" required>
