@@ -9,7 +9,7 @@ import { environment } from '../../environments/environment';
 
 export class AuthenticationService {
 
-  url: string = environment.apiMember + 'login/auth';
+  url: string = environment.apiMemberCodespace + 'login/auth';
 
   constructor(private http: HttpClient) { }
 
