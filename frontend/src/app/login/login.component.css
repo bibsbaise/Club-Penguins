@@ -56,9 +56,14 @@ html, body {
   margin-bottom: 20px;
 }
 
-/*#login .login .input {
-  border-radius: 16px;
-}*/
+.text-field {
+  margin-bottom: 8px;
+  width: 100%;
+}
+
+.text-field mat-form-field {
+  width: 100%;
+}
 
 #login .erro mat-card {
   color: black;

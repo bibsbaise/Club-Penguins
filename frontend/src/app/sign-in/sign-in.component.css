@@ -23,13 +23,14 @@ html, body {
 }
 
 #sign-in .image-icon  {
-  margin-top: 60px;
+  margin-top: 24px;
   margin-bottom: 24px;
   align-items: center;
+  height: 320px;
 }
 
 #sign-in .image-icon img {
-  height: 40%;
+  height: 100%;
 }
 
 #sign-in .sign-in p{
