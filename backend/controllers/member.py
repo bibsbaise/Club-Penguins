@@ -27,7 +27,7 @@ def create_member():
 def login_member():
     try:
         dados = request.json
-        if(Member.verify_email_password(dados['email'],member['password'])):
+        if(Member.verify_email_password(dados['email'],dados['password'])):
             return {"msg": "Login correto"}, 200
         else:
             return {"msg": "Login ou senha incorretos"}, 400
