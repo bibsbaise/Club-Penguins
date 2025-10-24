@@ -14,9 +14,10 @@ export class SignInComponent implements OnInit {
 
   ngOnInit(): void {
     this.signInForm = this.fb.group({
+      nome: ['', [Validators.pattern(/^\w+\s\w+$/),Validators.required, Validators.minLength(3)]],
       email: ['', [Validators.required, Validators.email]],
       password: ['', [Validators.required, Validators.minLength(6)]],
-      passwordCheck: ['', [Validators.required]]
+      passwordCheck: ['', [Validators.required]],
     }, { validators: this.passwordsMatch }); // valida se senhas coincidem
   }
 

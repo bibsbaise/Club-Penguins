@@ -10,24 +10,32 @@
 
         <form [formGroup]="signInForm" (ngSubmit)="submitSignIn()">
 
-            <div class="input-email">
+            <div class="input">
+                <mat-form-field appearance="outline">
+                    <mat-label>Nome</mat-label>
+                    <input matInput type="text" placeholder="exemplo@email.com" formControlName="nome" required>
+                    <mat-error *ngIf="signInForm.get('nome')?.hasError('pattern')">Apenas um nome e um sobrenome</mat-error>
+                </mat-form-field>
+
+                <br>
+
                 <mat-form-field appearance="outline">
                     <mat-label>E-mail</mat-label>
                     <input matInput type="email" placeholder="exemplo@email.com" formControlName="email" required>
                 </mat-form-field>
             </div>
 
-            <div class="input-password">
+            <div class="input">
                 <mat-form-field appearance="outline">
                     <mat-label>Senha</mat-label>
                     <input matInput type="password" formControlName="password" required>
+                    <mat-error *ngIf="signInForm.get('password')?.hasError('minlength')">A senha deve ter no mínimo 6 caracteres</mat-error>
                 </mat-form-field>
-            </div>
 
-            <div class="input-password-check">
                 <mat-form-field appearance="outline">
                     <mat-label>Confirme a senha</mat-label>
                     <input matInput type="password" formControlName="password" required>
+                    <mat-error *ngIf="signInForm.hasError('passwordsMismatch')">As senhas não coincidem</mat-error>
                 </mat-form-field>
             </div>
 
