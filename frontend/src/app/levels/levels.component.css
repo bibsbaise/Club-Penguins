@@ -101,15 +101,15 @@ body {
 .cards-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-    gap: 32px;
+    gap: 40px;
     justify-content: center;
     width: 100%;
     max-width: 100%;
 }
 
 .card {
-    width: 200px;
-    height: 200px;
+    width: 140px;
+    height: 140px;
     border-radius: 16px;
     display: flex;
     justify-content: center;
