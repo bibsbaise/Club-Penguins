@@ -40,7 +40,6 @@
 }
 
 #home header .streak,
-#home header .coins,
 #home header .lifes {
     display: flex;
     flex-direction: row;

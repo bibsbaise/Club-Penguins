@@ -17,7 +17,7 @@ body {
 #niveis header {
     background-color: #004AAD;
     font-family: 'Lato', sans-serif;
-    height: 15%;
+    height: 13vh;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -34,7 +34,7 @@ body {
 }
 
 #niveis header .logo .logo-icon {
-    height: 115px;
+    height: 70px;
 }
 
 #niveis header .streak .streak-icon,
@@ -48,7 +48,6 @@ body {
 }
 
 #niveis header .streak,
-#niveis header .coins,
 #niveis header .lifes {
     display: flex;
     flex-direction: row;

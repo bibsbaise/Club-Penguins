@@ -4,7 +4,7 @@ import { ActivatedRoute } from '@angular/router';
 @Component({
   selector: 'app-levels',
   templateUrl: './levels.component.html',
-  styleUrls: ['./levels.component.css'] // Corrigi typo: styleUrl → styleUrls
+  styleUrls: ['./levels.component.css'] 
 })
 export class LevelsComponent implements OnInit {
   modulo!: string;
