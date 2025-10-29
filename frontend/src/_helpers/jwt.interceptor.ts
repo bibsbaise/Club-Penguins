@@ -3,7 +3,7 @@ import { Injectable } from "@angular/core";
 import { Observable, throwError, catchError } from "rxjs";
 import { MatDialog } from "@angular/material/dialog";
 import { Router } from "@angular/router";
-import { AuthenticationService } from "../app/login/authentication.service";
+import { AuthenticationService } from "../app/login/services/authentication.service";
 import { AlertComponent } from "../app/alert/alert.component";
 
 @Injectable()

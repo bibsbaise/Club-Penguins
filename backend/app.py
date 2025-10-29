@@ -7,7 +7,10 @@ import threading # caso a gente utilize processamentos paralelos
 load_dotenv()
 
 app = Flask(__name__)
-CORS(app, resources={r"/*":{"origins":"*"}})
+# CORS(app, resources={r"/*":{"origins":"*"}}) # DESCOMENTAR QUANDO RODAR FORA DO CODESPACE
+frontend_origin = "https://stunning-space-guacamole-jxjwxxqq75wcqp97-4200.app.github.dev"
+
+CORS(app, resources={r"/*": {"origins": frontend_origin}}, supports_credentials=True)
 
 # models.__init__(app) # descomentar depois de arrumar o __init__.py
 

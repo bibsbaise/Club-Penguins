@@ -5,7 +5,7 @@ from utils.crypto import encrypt, decrypt
 member_bp = Blueprint('member_bp', __name__)
 
 # Criar conta
-@member_bp.route('/create', methods=['POST'])
+@member_bp.route('/signin', methods=['POST'])
 def create_member():
     try:
         dados = request.json
@@ -14,8 +14,8 @@ def create_member():
         else:
             member = Member.validate_create(dados)
             member = Member(email=encrypt(member['email']),
-            first_name=encrypt(member['first_name']),
-            last_name=encrypt(member['last_name']),
+            first_name=encrypt(member['name'].split()[0]),
+            last_name=encrypt(member['name'].split()[1]),
             password=member['password'])
             member.save()
             return {"msg": "Usuário criado com sucesso!"}, 200
