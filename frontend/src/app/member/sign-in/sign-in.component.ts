@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators, AbstractControl } from '@angular/forms';
-import { AlertComponent } from '../alert/alert.component';
-import { AuthenticationService } from '../login/services/authentication.service';
+import { AlertComponent } from '../../alert/alert.component';
+import { AuthenticationService } from '../../services/authentication.service';
 
 @Component({
   selector: 'app-sign-in',

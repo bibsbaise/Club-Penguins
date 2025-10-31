@@ -6,7 +6,7 @@ body {
     background-color: #d6e9ff;
 }
 
-#niveis {
+#modulos {
     min-height: 100vh;
     background-color: #d6e9ff;
     display: flex;
@@ -14,7 +14,7 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
-#niveis header {
+#modulos header {
     background-color: #004AAD;
     font-family: 'Lato', sans-serif;
     height: 13vh;
@@ -27,28 +27,43 @@ body {
     box-sizing: border-box;
 }
 
+.titulo-aula {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color:#004AAD;
+    font-weight: bold;
+}
+
+.module-icon{
+    color:#004AAD; 
+    font-size: 60px; 
+    width: 60px; 
+    height: 60px
+}
+
 .user-status {
     display: flex;
     flex-direction: row;
     gap: 160px;
 }
 
-#niveis header .logo .logo-icon {
+#modulos header .logo .logo-icon {
     height: 70px;
 }
 
-#niveis header .streak .streak-icon,
-#niveis header .coins .coins-icon,
-#niveis header .lifes .lifes-icon {
+#modulos header .streak .streak-icon,
+#modulos header .coins .coins-icon,
+#modulos header .lifes .lifes-icon {
     height: 55px;
 }
 
-#niveis header .profile .profile-icon {
+#modulos header .profile .profile-icon {
     height: 65px;
 }
 
-#niveis header .streak,
-#niveis header .lifes {
+#modulos header .streak,
+#modulos header .lifes {
     display: flex;
     flex-direction: row;
     gap: 16px;
@@ -59,7 +74,7 @@ body {
     align-items: center;
 }
 
-#niveis .content {
+#modulos .content {
     background-color: white;
     border-radius: 24px;
     padding: 40px;
@@ -67,7 +82,7 @@ body {
     margin-block: 0px;
 }
 
-#niveis .back-button {
+#modulos .back-button {
     display: flex;
     flex-direction: row;
     background-color: transparent;
@@ -80,17 +95,7 @@ body {
     margin-bottom: 24px;
 }
 
-#niveis .back-button img {
-    height: 24px;
-}
-
-#niveis .back-button p {
-    font-family: 'Lato', sans-serif;
-    font-size: 1.1rem;
-    font-weight: 550;
-}
-
-#niveis .module-title {
+#modulos .module-title {
     font-size: 2.5rem;
     font-family: 'Lato', sans-serif;
     font-weight: bold;
@@ -99,10 +104,9 @@ body {
 }
 
 .cards-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    display: flex;
     gap: 40px;
-    justify-content: center;
+    justify-content: space-between;
     width: 100%;
     max-width: 100%;
 }

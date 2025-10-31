@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
-import { AuthenticationService } from './services/authentication.service';
+import { AuthenticationService } from '../../services/authentication.service';
 // import { EncryptService } from '../_helpers/encrypt.service';
 
 @Component({
@@ -31,32 +31,26 @@ export class LoginComponent {
 
   submitLogin() {
     this.errorAuth = false;
+    const email =this.loginForm.get('email')?.value;
+    const pwd = this.loginForm.get('password')?.value;
+    
+    if(email && pwd) {
+      this.auth.login(email,pwd).subscribe({
+        error: (err) => {
+          this.errorAuth = true
+        },
+        next: (res: any) => {
+          const user = this.loginForm.get('email')?.value;
 
-    this.auth.login(
-      this.loginForm.get('email')?.value,
-      this.loginForm.get('password')?.value,
-    ).subscribe({
-
-      error: (err) => {
-        this.errorAuth = true
-      },
-      next: (res: any) => {
-        const user = this.loginForm.get('email')?.value;
-        const pwd = this.loginForm.get('password')?.value
-
-        if(user && pwd) {
-
-          // localStorage.setItem('token', res.token);
-          // localStorage.setItem('id', res.id);
-          localStorage.setItem('user', user);
+          if(user) {
+            localStorage.setItem('user', user);
+          }
         }
-      }
-    });
+      });
+    }
   }
 
   logOut() {
-    // localStorage.removeItem('token');
-    // localStorage.removeItem('id');
     localStorage.removeItem('user');
   }
 

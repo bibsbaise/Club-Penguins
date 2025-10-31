@@ -15,11 +15,11 @@ import { MatIconModule } from '@angular/material/icon';
 import { JwtInterceptor } from '../_helpers/jwt.interceptor';
 import { CustomHttpInterceptor } from '../_helpers/http.interceptor';
 import { AppComponent } from './app.component';
-import { LoginComponent } from './login/login.component';
-import { SignInComponent } from './sign-in/sign-in.component';
+import { LoginComponent } from './member/login/login.component';
+import { SignInComponent } from './member/sign-in/sign-in.component';
 import { HomeComponent } from './home/home.component';
 import { CommonModule } from '@angular/common';
-import { LevelsComponent } from './levels/levels.component';
+import { ModulosComponent } from './aulas/modulos/modulos.component';
 
 
 @NgModule({
@@ -28,7 +28,7 @@ import { LevelsComponent } from './levels/levels.component';
     LoginComponent,
     SignInComponent,
     HomeComponent,
-    LevelsComponent,
+    ModulosComponent,
   ],
   imports: [
     BrowserModule,
